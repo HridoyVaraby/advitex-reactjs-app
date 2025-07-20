@@ -38,7 +38,7 @@ function App() {
           <Context>
             <Routes>
               <Route path="/">
-                <Route index element={<HomePage />} />
+                <Route index element={<MarketingConsultionPage />} />
 
                 <Route
                   path="finance-consulting"
@@ -53,8 +53,8 @@ function App() {
                   element={<InsuranceConsultingPage />}
                 />
                 <Route
-                  path="marketing-consulting"
-                  element={<MarketingConsultionPage />}
+                  path="business-consulting"
+                  element={<HomePage />}
                 />
                 <Route path="about" element={<AboutPage />} />
                 <Route path="portfolio" element={<PortfolioPage />} />
