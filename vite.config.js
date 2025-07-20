@@ -12,6 +12,7 @@ export default defineConfig({
   },
   preview: {
     port: 4173,
-    host: true // 👈 enables external access
+    host: true,
+    allowedHosts: ['dev.varabit.com'] // 👈 Add your custom domain here
   },
 });
