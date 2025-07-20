@@ -1,0 +1,121 @@
+.infiniteSlide {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  animation: 17.92s linear 0s infinite normal none running infiniteSlides;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.infiniteSlideVertical {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  animation: 47.4s linear 0s infinite normal none running infiniteSlidesVertical;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+@keyframes infiniteSlides {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-1792px, 0, 0);
+  }
+}
+@keyframes infiniteSlidesVertical {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -2370px, 0);
+  }
+}
+.tf-sw-mobile {
+  &.swiper-active-768 {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    &.swiper-active-768 {
+      display: block !important;
+    }
+    &.swiper-inActive-768 {
+      display: none !important;
+    }
+  }
+  &.swiper-active-576 {
+    display: none;
+  }
+
+  @media (max-width: 576px) {
+    &.swiper-active-576 {
+      display: block !important;
+    }
+    &.swiper-inActive-576 {
+      display: none !important;
+    }
+  }
+}
+.tfSubscribeMsg {
+  display: none;
+  max-height: 0px;
+  // transition: 0.4s;
+  overflow: hidden;
+  &.active {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 180px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-col-block .tf-collapse-content {
+    overflow-y: hidden;
+    display: block !important;
+    height: 0;
+    transition: 0.5s;
+  }
+}
+.rc-slider .rc-slider-handle {
+  border: solid 2px var(--Primary);
+  opacity: 1 !important;
+  background-color: #fff !important;
+  width: 20px;
+  border-radius: 10px !important;
+  height: 20px;
+
+  margin-top: -9px;
+}
+
+.rc-slider .rc-slider-handle:hover {
+  border-color: var(--Primary);
+}
+
+.rc-slider .rc-slider-handle-dragging {
+  border-color: var(--Primary) !important;
+  box-shadow: none !important;
+}
+
+.rc-slider .rc-slider-track,
+.rc-slider .rc-slider-tracks {
+  background-color: var(--Primary);
+}
+.add-cart.cart-added {
+  background-color: var(--Primary);
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .service-accordion-item:not(.is-active) {
+    width: 0px;
+    padding: 0px;
+    overflow: hidden;
+    border: none !important;
+  }
+  .service-accordion-item.is-active {
+    width: 100% !important;
+  }
+}

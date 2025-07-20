@@ -1,0 +1,248 @@
+@use "../abstracts/index" as *;
+
+.nav-tabs-wrap {
+    flex-wrap: nowrap;
+    .nav-link {
+        display: flex;
+    }
+    &.style-1 {
+        .nav-link {
+            width: 280px;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            border-radius: 31px;
+            @include transition3();
+            svg {
+                path,
+                circle {
+                    @include transition3();
+                }
+            }
+            &:hover,
+            &.active {
+                background-color: var(--Primary);
+                font-weight: 500;
+                color: var(--White);
+                svg {
+                    path,
+                    circle {
+                        stroke: var(--White);
+                    }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        display: flex;
+        gap: 10px;
+        gap: 40px;
+        .nav-link {
+            width: 322px;
+            flex-direction: column;
+            text-align: start;
+            color: var(--Black);
+            padding: 0;
+            gap: 17px;
+            &:hover,
+            &.active {
+                .line {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .line {
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: var(--Mono-gray-1);
+            border-radius: 81px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 0;
+                background: linear-gradient(
+                    90.05deg,
+                    #ff3a2d 0.09%,
+                    #ffa13f 99.81%
+                );
+                @include transition3();
+                border-radius: inherit;
+            }
+        }
+    }
+}
+
+.flat-animate-tab {
+    height: 100%;
+    overflow: hidden;
+    .tab-content {
+        position: relative;
+        height: 100%;
+    }
+    .tab-pane {
+        position: absolute;
+        display: block;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100px);
+        z-index: 1;
+        &.active {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+.widget-tabs {
+    &.style-1 {
+        .widget-menu-tab {
+            display: flex;
+            gap: 43px;
+            padding-bottom: 40px;
+            margin-bottom: 44px;
+            border-bottom: 1px solid var(--Mono-gray-4);
+            .item-title {
+                cursor: pointer;
+                position: relative;
+                color: #474e5c;
+                @include transition3;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-color: var(--White);
+                    @include transition3;
+                }
+                &:hover,
+                &.active {
+                    color: var(--Primary);
+                }
+            }
+        }
+        .widget-content-tab {
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--Mono-gray-2);
+        }
+    }
+    .widget-content-tab {
+        position: relative;
+        overflow: hidden;
+        .widget-content-inner {
+            display: block;
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            -webkit-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+            transform: translateY(30px);
+            transition-timing-function: ease-in;
+            transition-duration: 0.2s;
+            &.active {
+                pointer-events: auto;
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                z-index: 2;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+                transition-timing-function: ease-out;
+                transition-duration: 0.3s;
+                transition-delay: 0.3s;
+            }
+        }
+    }
+}
+
+.tab-reviews {
+    .tab-reviews-heading {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+            width: 100%;
+            max-width: 597px;
+            gap: 30px;
+            .list-start {
+                display: flex;
+                gap: 2px;
+                justify-content: center;
+                margin-bottom: 7px;
+                margin-top: 1px;
+                font-size: 17px;
+            }
+        }
+        .ratings {
+            i {
+                color: #f4752d;
+            }
+        }
+    }
+    .rating-score {
+        width: 100%;
+        max-width: 365px;
+        .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .number-1 {
+            width: 12px;
+            text-align: end;
+        }
+        .icon {
+            font-size: 16px;
+            margin-left: 1px;
+            color: #f4752d;
+        }
+        .number-2 {
+            width: 17px;
+        }
+        .line-bg {
+            margin: 0 8px;
+            width: 100%;
+            height: 8px;
+            background-color: #e9e9e9;
+
+            div {
+                height: 100%;
+                background-color: var(--Black);
+            }
+        }
+    }
+    .list-star {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        i {
+            font-size: 20px;
+        }
+    }
+}

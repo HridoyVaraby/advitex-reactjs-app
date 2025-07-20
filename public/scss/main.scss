@@ -1,0 +1,13 @@
+@use "sass:meta";
+@import "../css/bootstrap.css";
+@import "../css/animate.min.css";
+@import "../css/odometer.min.css";
+@import "../css/swiper-bundle.min.css";
+
+@include meta.load-css("app.scss");
+// Font
+@import "../font/fonts.css";
+
+// Icon
+@import "../font/icons/icomoon/style.css";
+@include meta.load-css("custom.scss");

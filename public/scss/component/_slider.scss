@@ -1,0 +1,140 @@
+@use "../abstracts/index" as *;
+
+.sw-button {
+    position: unset;
+    margin-top: 0;
+    @include flex(center, center);
+    @include transition3();
+    &.style-default {
+        height: unset;
+        i {
+            font-size: 24px;
+        }
+        &::after {
+            display: none;
+        }
+        &.has-bg {
+            width: 52px;
+            height: 52px;
+            background-color: var(--Primary);
+            border-radius: 999px;
+            color: var(--White);
+            border: 1px solid var(--Primary);
+            &.v2 {
+                &.swiper-button-disabled,
+                &:hover {
+                    opacity: 1;
+                    background-color: var(--White);
+                    border-color: var(--Primary);
+                    color: var(--Primary);
+                    svg path {
+                        stroke: var(--Primary);
+                    }
+                }
+            }
+            &.swiper-button-disabled,
+            &:hover {
+                opacity: 1;
+                background-color: var(--White);
+                border-color: var(--Border);
+                color: var(--Black);
+                svg path {
+                    stroke: var(--Black);
+                }
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &.style-1 {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: var(--dark-color);
+        @include transition3();
+        &::after {
+            display: none;
+        }
+        &:hover {
+            color: var(--Primary);
+        }
+        &.bg-liner {
+            background: linear-gradient(
+                264deg,
+                rgba(255, 255, 255, 0.1) -1.01%,
+                rgba(255, 255, 255, 0) 149.68%
+            );
+            i {
+                color: var(--White);
+            }
+        }
+    }
+    &.style-2 {
+        color: var(--White);
+        background-color: var(--dark-color);
+        height: 32px;
+        width: 32px;
+        border-radius: 4px;
+        border: 1px solid var(--dark-color);
+        @include transition3();
+        &.swiper-button-disabled {
+            background-color: var(--five);
+            border: 1px solid var(--border);
+            color: var(--black);
+            opacity: 1;
+        }
+        &:hover {
+            background-color: var(--White);
+            color: var(--dark-color);
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.sw-progress {
+    position: relative;
+    height: 8px !important;
+    width: 136px !important;
+    .swiper-pagination-progressbar-fill {
+        background-color: var(--Primary);
+    }
+}
+
+.sw-line {
+    max-width: max-content;
+    .swiper-pagination-bullet {
+        width: 72px;
+        border-radius: 25px;
+        background-color: #6c6c6c;
+        height: 8px;
+        &.swiper-pagination-bullet-active {
+            background-color: var(--White) !important;
+        }
+    }
+}
+
+.sw-dots {
+    .swiper-pagination-bullet {
+        background-color: var(--Mono-gray-7);
+        opacity: 1;
+        width: 7px;
+        height: 7px;
+        &.swiper-pagination-bullet-active {
+            background-color: var(--Primary) !important;
+        }
+    }
+    &.style-1 {
+        .swiper-pagination-bullet {
+            background-color: var(--Mono-gray-7);
+            width: 8px;
+            height: 8px;
+            &.swiper-pagination-bullet-active {
+                background-color: var(--White) !important;
+            }
+        }
+    }
+}

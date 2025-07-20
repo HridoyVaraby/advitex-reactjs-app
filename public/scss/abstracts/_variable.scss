@@ -1,0 +1,70 @@
+$font-main: "Inter Tight", serif;
+$font-main2: "DM Sans", serif;
+$font-main3: "Inter", serif;
+$fontIcon: "icomoon";
+
+:root {
+    --Black: #000000;
+    --White: #ffffff;
+    --Mono-gray-1: #f5f6f7;
+    --Mono-gray-2: #e0e3e6;
+    --Mono-gray-3: #bec5cb;
+    --Mono-gray-4: #9fa9b2;
+    --Mono-gray-5: #7e8995;
+    --Mono-gray-6: #636e78;
+    --Mono-gray-7: #49525a;
+    --Mono-gray-8: #7e8695;
+    --Mono-dark-8: #2e3338;
+    --Mono-dark-9: #121416;
+    --Mono-dark-10: #383838;
+    --Mono-dark-11: #121212;
+    --Color-dark: #3f3d2e;
+    --Sub-color-1: #f2f6ff;
+    --Sub-color-2: #e0eae8;
+    --Sub-color-3: #458182;
+    --Color-text-1: #6ef193;
+    --Color-text-2: #9da5b4;
+    --Color-text-3: #9da5b4;
+    --Border: #dee3ee;
+    --Error: #ec3232;
+    --Bg-color-1: #f9f5f1;
+    --Bg-color-2: #c9d2f4;
+    --Bg-color-3: #f5f2f0;
+    // Insurance Consulting
+    --Primary-ic-blue: #8fa8fb;
+    --Primary-ic-red: #ff8283;
+    --Primary-ic-green: #a7decf;
+    --Primary-ic-yellow: #fedc6e;
+    // Business Consulting
+    --Primary: #0075ff;
+    --Primary-1: #e2ecf9;
+    --Primary-2: #cfe6ff;
+    --Primary-3: #bfd8fe;
+    // Finance Consulting
+    --Primary-fc-green-100: #1c3f3a;
+
+    // Finance Advisor
+
+    --Primary-fa-blue-10: #def5ff;
+    --Primary-fa-orange-10: #ffead3;
+    --Primary-fa-green-10: #eef9f1;
+    --Primary-fa-purple-10: #dfdeff;
+    --Primary-fa-orange-30: #f3af7c;
+    --Primary-fa-yellow-10: #fbfaf2;
+    --Primary-fa-green: #1c5551;
+    // Marketing Consulting
+}
+
+.primary-1 {
+    --Primary: #1c3f3a;
+}
+.primary-2 {
+    --Primary: #604cc3;
+    --Sub-color-2: #f5f5ff;
+}
+.primary-3 {
+    --Primary: #28285b;
+}
+.primary-4 {
+    --Primary: #fc6a2b;
+}

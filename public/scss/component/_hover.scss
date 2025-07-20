@@ -1,0 +1,267 @@
+@use "../abstracts/index" as *;
+
+.hover-image {
+    .img-style,
+    .article-thumb {
+        position: relative;
+        overflow: hidden;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 0%;
+            left: 50%;
+            top: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%) rotate(-45deg);
+            z-index: 1;
+            pointer-events: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 1s;
+        }
+    }
+    &:hover {
+        .img-style,
+        .article-thumb {
+            &:after {
+                height: 250%;
+                transition: all 600ms linear;
+                background-color: transparent;
+            }
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.hover-image-2 {
+    .image-rotate {
+        overflow: hidden;
+        img {
+            @include transition3;
+        }
+    }
+    &:hover {
+        .image-rotate {
+            img {
+                transform: scale(1.1) rotate(3deg);
+            }
+        }
+    }
+}
+
+.hover-image-3 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .article-thumb {
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+            transition: 0.5s;
+            width: 100%;
+            object-fit: cover;
+            @media (max-width: 1023px) {
+                position: unset;
+                width: 100%;
+                height: auto;
+            }
+
+            &:nth-child(1) {
+                transform: translatex(50%) scalex(2);
+                opacity: 0;
+                filter: blur(10px);
+            }
+        }
+    }
+    &:hover {
+        .article-thumb {
+            img:nth-child(2) {
+                transform: translatex(-50%) scalex(2);
+                opacity: 0;
+                filter: blur(10px);
+            }
+            img:nth-child(1) {
+                transform: translatex(0) scalex(1);
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+    }
+}
+
+.effect-icon {
+    &:hover {
+        .icon,
+        .tf-icon {
+            i,
+            img,
+            svg {
+                animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            }
+        }
+    }
+}
+
+.hover-tooltip {
+    position: relative;
+    .tooltip {
+        position: absolute;
+        white-space: nowrap;
+        padding: 0px 8.5px;
+        height: 25px;
+        border-radius: 2px;
+        bottom: calc(100% + 7px);
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        color: var(--White);
+        max-width: 250px;
+        width: max-content;
+        background-color: var(--Primary);
+        transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
+        z-index: 5;
+        font-size: 12px;
+        line-height: 22px;
+        &::before {
+            content: "";
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            top: 20px;
+            position: absolute;
+            background: var(--Primary);
+            width: 8px;
+            height: 8px;
+            z-index: -1;
+        }
+    }
+    &:hover {
+        .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.tooltip-bot {
+        .tooltip {
+            top: calc(100% + 5px);
+            bottom: unset;
+            &::before {
+                top: -2px;
+            }
+        }
+    }
+}
+
+.hover-line-text {
+    display: inline;
+    @include transition5();
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(currentColor),
+        color-stop(98%, currentColor)
+    );
+    background-image: linear-gradient(
+        to bottom,
+        currentColor 0%,
+        currentColor 98%
+    );
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: left 100%;
+    &:hover {
+        background-size: 100% 2px;
+    }
+}
+
+.hover-border {
+    .img-style,
+    .article-thumb,
+    .icon {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            opacity: 0;
+            width: 95%;
+            height: 95%;
+            transition: all 0.4s ease;
+            border: 2px solid var(--Primary);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: inherit;
+            pointer-events: none;
+            z-index: 1;
+        }
+    }
+    &.border-element {
+        position: relative;
+        .img-style,
+        .article-thumb,
+        .icon {
+            position: unset;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            opacity: 0;
+            width: 95%;
+            height: 95%;
+            transition: all 0.4s ease;
+            border: 2px solid var(--Primary);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            border-radius: inherit;
+            z-index: 1;
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &:hover {
+        .img-style,
+        .article-thumb,
+        .icon {
+            &::before {
+                opacity: 1;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
