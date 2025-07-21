@@ -271,10 +271,10 @@ export default function Footer5() {
                   </ul>
                   <div className="footer-logo mb-0">
                     <img
-                      alt="logo"
-                      src="/images/logo/footer-logo-4.png"
-                      width={512}
-                      height={128}
+                      alt="Spread Logo"
+                      src="/images/logo/spread_logo_white.png"
+                      width={256}
+                      height={50}
                     />
                   </div>
                 </div>
