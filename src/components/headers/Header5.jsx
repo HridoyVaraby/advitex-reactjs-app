@@ -49,13 +49,13 @@ export default function Header5() {
                   </ul>
                 </nav>
                 <div className="header-right d-flex align-items-center">
-                  <Link
+                  {/*<Link
                     to={`/pricing`}
                     className="tf-btn btn-border hide-sm h36"
                   >
                     <span className="text-body-4">Get Started</span>
                     <span className="bg-effect" />
-                  </Link>
+                    </Link> */}
                   <Link
                     to={`/contact-us`}
                     className="tf-btn btn-dark hide-sm h36"

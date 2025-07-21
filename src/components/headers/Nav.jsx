@@ -24,9 +24,9 @@ export default function Nav() {
       <li className={`${isActive("/blog") ? "current-menu" : ""}`}>
         <Link to="/blog">Blog</Link>
       </li>
-      <li className={` ${isActive("/contact-us") ? "current-menu" : ""} `}>
+      {/*<li className={` ${isActive("/contact-us") ? "current-menu" : ""} `}>
         <Link to={`/contact-us`}>Contact</Link>
-      </li>
+      </li>*/}
 
     </>
   );
