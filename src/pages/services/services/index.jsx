@@ -3,8 +3,8 @@ import Contact from "@/components/common/Contact";
 import Faqs from "@/components/common/Faqs";
 
 import Testimonials from "@/components/common/Testimonials";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 import ServiceAdvantages from "@/components/otherPages/ServiceAdvantages";
 import Services from "@/components/otherPages/Services";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ export default function ServicesPage() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
+        <Header5 />
         <div className="page-title style-default">
           <div className="tf-container">
             <div className="row">
@@ -58,7 +58,7 @@ export default function ServicesPage() {
         <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer5 />
     </>
   );
 }

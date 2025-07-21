@@ -1,5 +1,5 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ export default function NotFoundPage() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
+        <Header5 />
         <div className="page-title style-default">
           <div className="error-404">
             <div className="contnet">
@@ -47,7 +47,7 @@ export default function NotFoundPage() {
         </div>
       </div>
 
-      <Footer1 />
+      <Footer5 />
     </>
   );
 }

@@ -1,8 +1,8 @@
 import Contact from "@/components/common/Contact";
 import Faqs from "@/components/common/Faqs";
 import { Link } from "react-router-dom";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 import Portfolio from "@/components/otherPages/Portfolio";
 
 import React from "react";
@@ -17,7 +17,7 @@ export default function PortfolioPage() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
+        <Header5 />
         <div className="page-title style-default">
           <div className="tf-container">
             <div className="row">
@@ -52,7 +52,7 @@ export default function PortfolioPage() {
         <Faqs parentClass="section-faqs style-1 tf-spacing-8 pt-0" />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer5 />
     </>
   );
 }

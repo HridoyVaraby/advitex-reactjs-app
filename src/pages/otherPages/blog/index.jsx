@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 import Blogs from "@/components/otherPages/Blogs";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -14,7 +14,7 @@ export default function BlogPage() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
+        <Header5 />
         <div className="page-title style-default v6">
           <div className="tf-container">
             <div className="row">
@@ -46,7 +46,7 @@ export default function BlogPage() {
       <div className="main-content style-1">
         <Blogs />
       </div>
-      <Footer1 parentClass="footer style-default has-border-top" />
+      <Footer5 parentClass="footer style-default has-border-top" />
     </>
   );
 }

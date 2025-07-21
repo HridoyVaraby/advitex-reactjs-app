@@ -1,5 +1,5 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 import Contact from "@/components/otherPages/Contact";
 import OfficeLocations from "@/components/otherPages/OfficeLocations";
 
@@ -15,14 +15,14 @@ export default function ContactUsPage() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
+        <Header5 />
 
         <Contact />
       </div>
       <div className="main-content style-1">
         <OfficeLocations />
       </div>
-      <Footer1 />
+      <Footer5 />
     </>
   );
 }
