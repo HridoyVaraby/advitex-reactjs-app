@@ -68,68 +68,68 @@ export default function Hero() {
                 engage, and thrive in today’s dynamic marketplace
               </p>
             </div>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="form-send-email mb_31"
-            >
-              <fieldset>
-                <input
-                  className=""
-                  type="email"
-                  placeholder="Your Email Address"
-                  name="text"
-                  tabIndex={2}
-                  defaultValue=""
-                  aria-required="true"
-                  required
-                />
-              </fieldset>
-              <div className="button-submit">
-                <button className="tf-btn btn-primary2" type="submit">
-                  <span className="text-body-3">Get Started</span>
-                  <span className="bg-effect" />
-                </button>
-              </div>
-            </form>
-            <div className="facts d-flex align-items-center justify-content-center">
-              <div className="avatar-wrap d-flex">
-                <div className="avatar item-1">
-                  <img
-                    alt=""
-                    src="/images/avatar/facts-3.png"
-                    width={28}
-                    height={28}
+            {/*<form
+                onSubmit={(e) => e.preventDefault()}
+                className="form-send-email mb_31"
+              >
+                <fieldset>
+                  <input
+                    className=""
+                    type="email"
+                    placeholder="Your Email Address"
+                    name="text"
+                    tabIndex={2}
+                    defaultValue=""
+                    aria-required="true"
+                    required
                   />
+                </fieldset>
+                <div className="button-submit">
+                  <button className="tf-btn btn-primary2" type="submit">
+                    <span className="text-body-3">Get Started</span>
+                    <span className="bg-effect" />
+                  </button>
                 </div>
-                <div className="avatar item-2">
-                  <img
-                    alt=""
-                    src="/images/avatar/facts-4.png"
-                    width={28}
-                    height={28}
-                  />
+              </form>
+              <div className="facts d-flex align-items-center justify-content-center">
+                <div className="avatar-wrap d-flex">
+                  <div className="avatar item-1">
+                    <img
+                      alt=""
+                      src="/images/avatar/facts-3.png"
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className="avatar item-2">
+                    <img
+                      alt=""
+                      src="/images/avatar/facts-4.png"
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className="avatar item-3">
+                    <img
+                      alt=""
+                      src="/images/avatar/facts-5.png"
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <div className="avatar item-4">
+                    <img
+                      alt=""
+                      src="/images/avatar/facts-6.png"
+                      width={28}
+                      height={28}
+                    />
+                  </div>
                 </div>
-                <div className="avatar item-3">
-                  <img
-                    alt=""
-                    src="/images/avatar/facts-5.png"
-                    width={28}
-                    height={28}
-                  />
-                </div>
-                <div className="avatar item-4">
-                  <img
-                    alt=""
-                    src="/images/avatar/facts-6.png"
-                    width={28}
-                    height={28}
-                  />
-                </div>
-              </div>
-              <p className="text-body-3 text_mono-dark-9">
-                200+ Businesses Engaged
-              </p>
-            </div>
+                <p className="text-body-3 text_mono-dark-9">
+                  200+ Businesses Engaged
+                </p>
+              </div> */}
           </div>
         </div>
       </div>
