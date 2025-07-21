@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import OdometerComponent from "@/components/common/OdometerComponent";
 export default function About() {
   return (
-    <div className="section-about style-1">
+    <div className="section-about style-1" style={{ paddingTop: '100px' }}>
       <div className="tf-container-2">
         <div className="row">
           <div className="col-lg-6">

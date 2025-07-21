@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Navigation } from "swiper/modules";
 export default function CaseStudies() {
   return (
-    <div className="section-case-studies style-1 tf-spacing-36 pb-0">
+    <div className="section-case-studies style-1 tf-spacing-36" style={{ paddingBottom: '40px' }}>
       <div className="tf-container">
         <div className="heading-section gap_12 text-center">
           <div className="heading-tag d-flex gap_12 mx-auto mb_20 text_mono-dark-8 fw-5">
