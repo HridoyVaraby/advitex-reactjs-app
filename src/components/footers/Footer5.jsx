@@ -281,7 +281,7 @@ export default function Footer5() {
                 <p className="text-body-3 text-center text_mono-gray-5">
                   © {new Date().getFullYear()} Copyright by{" "}
                   <a href="#" className="link text_mono-gray-5 text-body-3">
-                    Themesflat
+                    Spread Communications
                   </a>{" "}
                   . All Right Reserved.
                 </p>
