@@ -108,6 +108,16 @@
   background-color: var(--Primary);
   color: #fff;
 }
+
+/* Custom color overrides for Purple/Yellow theme */
+.tf-btn.btn-gradient,
+.btn-gradient {
+  background: linear-gradient(90deg, #602D90 0%, #FBA819 100%) !important;
+}
+
+.highlight-gradient {
+  background: linear-gradient(135deg, #602D90 0%, #FBA819 100%) !important;
+}
 @media only screen and (max-width: 767px) {
   .service-accordion-item:not(.is-active) {
     width: 0px;

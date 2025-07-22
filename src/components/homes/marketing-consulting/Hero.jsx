@@ -162,9 +162,8 @@ export default function Hero() {
           >
             {allInfinityImages.map((image, index) => (
               <div
-                className={`marquee-item${
-                  index >= infinityImages.length ? " infiniteslide_clone" : ""
-                }`}
+                className={`marquee-item${index >= infinityImages.length ? " infiniteslide_clone" : ""
+                  }`}
                 style={{ flex: "0 0 auto", display: "block" }}
                 key={`infinity-img-${image.id}-${index}`}
               >

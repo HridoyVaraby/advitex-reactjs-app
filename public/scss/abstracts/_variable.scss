@@ -36,10 +36,10 @@ $fontIcon: "icomoon";
     --Primary-ic-green: #a7decf;
     --Primary-ic-yellow: #fedc6e;
     // Business Consulting
-    --Primary: #0075ff;
-    --Primary-1: #e2ecf9;
-    --Primary-2: #cfe6ff;
-    --Primary-3: #bfd8fe;
+    --Primary: #602D90;
+    --Primary-1: #f3eef9;
+    --Primary-2: #e6d7f0;
+    --Primary-3: #d9c0e7;
     // Finance Consulting
     --Primary-fc-green-100: #1c3f3a;
 
@@ -53,6 +53,7 @@ $fontIcon: "icomoon";
     --Primary-fa-yellow-10: #fbfaf2;
     --Primary-fa-green: #1c5551;
     // Marketing Consulting
+    --Secondary: #FBA819;
 }
 
 .primary-1 {
@@ -66,5 +67,6 @@ $fontIcon: "icomoon";
     --Primary: #28285b;
 }
 .primary-4 {
-    --Primary: #fc6a2b;
+    --Primary: #602D90;
+    --Secondary: #FBA819;
 }
