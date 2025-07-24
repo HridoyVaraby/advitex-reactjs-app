@@ -12,7 +12,7 @@ export default function Features2() {
             <p className="text-body-3 fw-5">Why Choose Us ?</p>
           </div>
           <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x">
-            Our unique solutions to{" "}
+            Our unique solutions designed to{" "}
             <span className="text-gradient">unlock</span> your <br />
             brand’s full potential
           </h2>
@@ -20,9 +20,8 @@ export default function Features2() {
             className="text-body-1 text_mono-gray-7 mt_27 wow animate__fadeInUp animate__animated"
             data-wow-delay="0s"
           >
-            Discover the expertise, innovation, and commitment that set us
-            apart. We <br />
-            deliver tailored strategies and measurable results to help.
+            Discover the expertise, innovation, and dedication that make us stand out. We <br />
+            provide customized strategies and measurable results to support your success.
           </p>
         </div>
         <ul
@@ -74,7 +73,7 @@ export default function Features2() {
               aria-selected="false"
             >
               <span className="text-body-1 text_mono-gray-5">03</span>
-              <span className="fw-5 h6">Our Completed Process</span>
+              <span className="fw-5 h6">Our Proven Process</span>
               <span className="line" />
             </button>
           </li>
@@ -90,7 +89,7 @@ export default function Features2() {
               aria-selected="false"
             >
               <span className="text-body-1 text_mono-gray-5">04</span>
-              <span className="fw-5 h6"> Evaluating and Optimizing</span>
+              <span className="fw-5 h6"> Analyzing and Optimizing</span>
               <span className="line" />
             </button>
           </li>
@@ -124,8 +123,7 @@ export default function Features2() {
                     Why Need Marketing ?
                   </h4>
                   <p className="text-body-1 text_mono-gray-7">
-                    Delivering tailored marketing solutions to help you connect,
-                    engage, and succeed in an ever-changing marketplace.
+                    Providing customized marketing solutions that empower you to connect, engage, and thrive in a constantly evolving marketplace.
                   </p>
                 </div>
                 <div>
@@ -140,12 +138,10 @@ export default function Features2() {
                       informed decisions that drive success.
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> Cancel anytime you
-                      want
+                      <i className="icon-check-cycle-line" /> Flexible plans with the freedom to cancel anytime.
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> Proven Results and
-                      Client Satisfaction
+                      <i className="icon-check-cycle-line" /> Proven results. Trusted by satisfied clients.
                     </li>
                   </ul>
                   <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -200,25 +196,24 @@ export default function Features2() {
                 <div className="heading mb_28 effect-item effect-right">
                   <h6 className="text_primary fw-5 mb_12 number">02</h6>
                   <h4 className="fw-5 mb_14 mb_24 title">
-                    Understand your Goals
+                    Understand your Vision & Goals
                   </h4>
                   <p className="text-body-1 text_mono-gray-7">
-                    We align with your vision to provide solutions that truly
-                    resonate with your unique objectives.
+                    We align with your vision to deliver solutions that genuinely reflect and support your unique goals.
                   </p>
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Personalized
-                    approaches crafted for your specific needs
+                    <i className="icon-check-cycle-line" /> Tailored approaches 
+                    designed around your unique needs.
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" /> Strategic insights
-                    to turn your goals into measurable outcomes
+                    that transform your goals into measurable results.
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Flexibility to adapt
-                    as your priorities change
+                    <i className="icon-check-cycle-line" /> Agile solutions 
+                    that evolve with your shifting priorities.
                   </li>
                 </ul>
                 <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -266,29 +261,27 @@ export default function Features2() {
                 <div className="heading mb_28 effect-item effect-right">
                   <h6 className="text_primary fw-5 mb_12 number">03</h6>
                   <h4 className="fw-5 mb_14 mb_24 title">
-                    Our Completed Process
+                    Our Proven Process
                   </h4>
                   <p className="text-body-1 text_mono-gray-7">
-                    We ensure every step is thorough, seamless, and designed to
-                    maximize your success.
+                    We make every step thorough, seamless, and strategically crafted to maximize your success.
                   </p>
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> End-to-end solutions
-                    tailored to your requirements
+                    <i className="icon-check-cycle-line" /> End-to-end solutions customized to fit your needs
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Transparent workflows for clarity and trust
+                    Clear, transparent workflows that build trust
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Exceptional expertise ensuring timely results
+                    Expertise you can rely on for timely, high-quality results
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Proven methodologies backed by client success stories
+                    Proven methodologies, validated by real client success stories
                   </li>
                 </ul>
                 <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -336,22 +329,20 @@ export default function Features2() {
                 <div className="heading mb_28 effect-item effect-right">
                   <h6 className="text_primary fw-5 mb_12 number">04</h6>
                   <h4 className="fw-5 mb_14 mb_24 title">
-                    Evaluating and Optimizing
+                    Analyzing and Optimizing
                   </h4>
                   <p className="text-body-1 text_mono-gray-7">
-                    Continuous improvement ensures your goals stay on track and
-                    exceed expectations.
+                    Ongoing optimization keeps your goals aligned and consistently surpasses expectations.
                   </p>
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Data-driven evaluations to measure performance
+                    Actionable insights that empower informed, success-oriented decisions
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />
-                    Brings the knowledge and insights you need to make informed
-                    decisions that drive success.
+                    Agile strategies designed to refine, adapt, and enhance results continuously
                   </li>
                   <li className="text-body-1 text_white">
                     <i className="icon-check-cycle-line" />

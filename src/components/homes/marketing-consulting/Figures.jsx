@@ -55,10 +55,10 @@ export default function Figures() {
                   </defs>
                 </svg>
               </div>
-              <p className="text-body-3 text_mono-gray-5 fw-5">Figures</p>
+              <p className="text-body-3 text_mono-gray-5 fw-5">Milestones</p>
             </div>
             <h2 className="title text_white fw-5 split-text split-lines-transform">
-              Where data <span className="text-gradient">tells</span> our storys
+              Where data <span className="text-gradient">reveals</span> our storys
             </h2>
           </div>
           <div className="right">

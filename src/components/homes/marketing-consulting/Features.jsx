@@ -12,7 +12,7 @@ export default function Features() {
             <p className="text-body-3 fw-5">Our Core Values</p>
           </div>
           <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x">
-            Our Innovative strategies backed by <br />
+            Our Smart strategies backed by <br />
             <span className="text-gradient"> Data-Driven</span> insights
           </h2>
         </div>
@@ -28,11 +28,10 @@ export default function Features() {
             </div>
             <div className="content">
               <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Creative solutions that deliver
+                Innovative solutions that get results
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Their innovative campaigns in redefining our brand identity and
-                market positioning have increased engagement by 22%
+                Most innovative & smart campaigns redefining our brand identity and market positioning have boosted engagement by 22%.
               </p>
             </div>
           </div>
@@ -47,11 +46,10 @@ export default function Features() {
             </div>
             <div className="content">
               <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Results-Driven Approach
+                Results-Driven Strategy
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Their targeted strategies in optimizing lead generation funnels
-                boosted our conversion rates by 15% last quarter.
+                Targeted strategies for optimizing lead generation funnels increased our conversion rates by 15% last quarter.
               </p>
             </div>
           </div>
@@ -66,11 +64,10 @@ export default function Features() {
             </div>
             <div className="content">
               <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Client-Centric Collaboration
+                Customer-Focused Partnership
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Their tailored marketing plans aligned with our goals have
-                strengthened customer loyalty and retention by 20%.
+                Customized marketing plans aligned with our goals have boosted customer loyalty and retention by 20%.
               </p>
             </div>
           </div>
@@ -88,8 +85,7 @@ export default function Features() {
                 Transparency and Integrity
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Their straightforward reporting and ethical practices have
-                ensured trust while improving campaign efficiency by 25%.
+                Clear reporting and ethical practices have built trust and boosted campaign efficiency by 25%.
               </p>
             </div>
           </div>
@@ -104,11 +100,10 @@ export default function Features() {
             </div>
             <div className="content">
               <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Data-Powered Decisions
+                Insight-Driven Decisions
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Their analysis-driven recommendations in refining ad spend
-                allocation have increased ROI by 30% in our key markets.
+                Data-driven recommendations for optimizing ad spend allocation have increased ROI by 30% in our key markets.
               </p>
             </div>
           </div>
@@ -126,8 +121,7 @@ export default function Features() {
                 Commitment to Excellence
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Their proactive support in managing our multi-channel campaigns
-                led to a seamless launch and 18% revenue growth.
+                Proactive support in managing our multi-channel campaigns ensured a seamless launch and drove an 18% revenue growth.
               </p>
             </div>
           </div>
