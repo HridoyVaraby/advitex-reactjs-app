@@ -58,14 +58,13 @@ export default function Hero() {
                 </p>
               </div>
               <h1 className="title text_mono-dark-9 fw-5 mb_28 split-text">
-                Strategic <span className="text-gradient">marketing</span>{" "}
-                solutions designed <br />
-                to empower your brand.
+                Purpose-driven smart  <span className="text-primary">marketing</span>{" "}
+                solutions that fuel <br />
+                your brand’s growth.
               </h1>
               <p className="text_mono-gray-7 sub-heading">
-                Providing expert marketing consulting services to help you
-                attract, <br />
-                engage, and thrive in today’s dynamic marketplace
+                Expert marketing consulting to help you grow, <br />
+                connect, and lead in today’s fast-changing market.
               </p>
             </div>
             {/*<form
