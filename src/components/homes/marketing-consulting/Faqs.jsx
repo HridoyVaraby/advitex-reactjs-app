@@ -1,37 +1,37 @@
 const faqData = [
   {
     id: 1,
-    question: "Do you provide personalized financial plans?",
+    question: "What services does Spread Communications offer?",
     answer:
-      "Advitex offers a range of financial consulting services, including personal financial planning, corporate strategy, investment advisory, and risk compliance. We tailor our solutions to help individuals, businesses, and investors achieve their financial goals efficiently.",
+      "We provide a full range of marketing and communication services, including digital marketing, content creation, social media management, brand strategy, and campaign development tailored to your business goals.",
     isActive: false,
   },
   {
     id: 2,
-    question: "How can financial consulting benefit my business?",
+    question: "How does Spread Communications customize strategies for different clients?",
     answer:
-      "Advitex offers a range of financial consulting services, including personal financial planning, corporate strategy, investment advisory, and risk compliance. We tailor our solutions to help individuals, businesses, and investors achieve their financial goals efficiently.",
+      "We take time to understand your unique brand vision, target audience, and objectives to create personalized marketing campaigns that effectively engage and convert.",
     isActive: true, // Default open
   },
   {
     id: 3,
-    question: "What services does Advitex offer?",
+    question: "How does Spread Communications measure the success of campaigns?",
     answer:
-      "Advitex offers a range of financial consulting services, including personal financial planning, corporate strategy, investment advisory, and risk compliance. We tailor our solutions to help individuals, businesses, and investors achieve their financial goals efficiently.",
+      "We use data-driven insights and analytics to track performance, optimize strategies, and provide transparent reporting on key metrics like engagement, conversions, and ROI.",
     isActive: false,
   },
   {
     id: 4,
-    question: "What industries do you specialize in?",
+    question: "Can Spread Communications help with social media management?",
     answer:
-      "Advitex offers a range of financial consulting services, including personal financial planning, corporate strategy, investment advisory, and risk compliance. We tailor our solutions to help individuals, businesses, and investors achieve their financial goals efficiently.",
+      "Absolutely! We design and manage social media strategies that build your brand presence, engage your audience, and foster community growth.",
     isActive: false,
   },
   {
     id: 5,
-    question: "How long does the consultation process take?",
+    question: "What makes Spread Communications different from other agencies?",
     answer:
-      "Advitex offers a range of financial consulting services, including personal financial planning, corporate strategy, investment advisory, and risk compliance. We tailor our solutions to help individuals, businesses, and investors achieve their financial goals efficiently.",
+      "Our commitment to innovation, personalized collaboration, and measurable results sets us apart. We focus on aligning strategies with your business goals to deliver lasting impact.",
     isActive: false,
   },
 ];
@@ -86,7 +86,7 @@ export default function Faqs() {
             <p className="text-body-3">The FAQs</p>
           </div>
           <h2 className="title text_mono-dark-9 fw-5 split-text effect-right">
-            Everything you need to <span className="text-gradient">know</span>
+            All you need to <span className="text-gradient">know</span>
           </h2>
           <p
             className="text-body-1 text_mono-gray-7 mt_28 wow animate__fadeInUp animate__animated"

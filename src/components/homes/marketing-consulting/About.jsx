@@ -17,9 +17,9 @@ export default function About() {
                   <p className="text-body-3">About Us</p>
                 </div>
                 <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x">
-                  <span className="text-gradient">Master</span> your marketing
+                  Take your <span className="text-gradient">marketing</span> strategies
                   <br />
-                  strategies with us
+                   to the next level with us
                 </h2>
               </div>
               <div className="content">
@@ -27,9 +27,9 @@ export default function About() {
                   className="text-body-1 mb_40 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
-                  Building personalized campaigns that drive engagement, boost{" "}
+                  Creating tailored campaigns that spark engagement,{" "}
                   <br />
-                  conversions, and enhance customer loyalty.
+                  increase conversions, and strengthen customer loyalty.
                 </p>
                 <Link
                   to={`/about`}

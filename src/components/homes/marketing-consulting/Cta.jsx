@@ -5,13 +5,11 @@ export default function Cta() {
     <div className="tf-container-2 tf-spacing-45 pt-0">
       <div className="banner-CTA">
         <h1 className="text_white split-text effect-right">
-          Ready to start a new project?
+          Ready to kick off your new project?
         </h1>
         <div className="bot flex-wrap-md d-flex align-items-end justify-content-between gap_12">
           <p className="text-body-1 text_white split-text split-lines-transform">
-            Our expert marketing consulting services are designed to help your
-            business unlock its full potential. From identifying growth
-            opportunities
+            Our expert marketing consulting services are crafted to help your business realize its full potential, starting with identifying growth opportunities.
           </p>
           <Link
             to={`/pricing`}

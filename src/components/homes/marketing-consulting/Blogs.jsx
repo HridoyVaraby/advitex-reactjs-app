@@ -16,7 +16,7 @@ export default function Blogs() {
               <p className="text-body-3 fw-5">Blogs</p>
             </div>
             <h2 className="title text_white fw-5 split-text effect-right">
-              Our precious <span className="text-gradient">blogs</span>
+              Our worthwhile <span className="text-gradient">blogs</span>
             </h2>
           </div>
           <div className="right">

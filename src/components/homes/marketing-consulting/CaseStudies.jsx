@@ -16,15 +16,14 @@ export default function CaseStudies() {
             <p className="text-body-3">Case studies</p>
           </div>
           <h2 className="title text_mono-dark-9 fw-5 split-text effect-right">
-            Our <span className="text-gradient">case</span> studies reveal
+            Our <span className="text-gradient">case</span> studies demonstrate
           </h2>
           <p
             className="text-body-1 text_mono-gray-7 mt_28 wow animate__fadeInUp animate__animated"
             data-wow-delay="0s"
           >
-            Helping you streamline operations, reduce costs, and achieve
-            measurable <br />
-            success with proven methodologies.
+            Helping you in streamlining operations, cutting costs, and achieving <br />
+            measurable success through proven methodologies.
           </p>
         </div>
       </div>
