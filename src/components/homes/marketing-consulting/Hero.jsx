@@ -57,10 +57,9 @@ export default function Hero() {
                   Top #1 Marketing Consulting Agency
                 </p>
               </div>
-              <h1 className="title text_mono-dark-9 fw-5 mb_28 split-text">
+              <h1 className="title text_mono-dark-9 fw-5 mb_28">
                 Purpose-driven smart  <span className="text-primary">marketing</span>{" "}
-                solutions that fuel <br />
-                your brand’s growth.
+                solutions <br /> that fuel your brand’s growth.
               </h1>
               <p className="text_mono-gray-7 sub-heading">
                 Expert marketing consulting to help you grow, <br />
