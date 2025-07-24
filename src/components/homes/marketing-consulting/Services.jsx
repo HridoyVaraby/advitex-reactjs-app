@@ -21,8 +21,8 @@ export default function Services() {
           </div>
           <div className="right">
             <p className="text-body-1 text_mono-gray-7 split-text split-lines-transform">
-              Explore our range of expert services designed to <br />
-              elevate your business. From strategic planning to <br />
+              We are best in - Discover expert services crafted <br />
+              to elevate your business—from strategy to execution, <br />
               execution, we deliver solutions.
             </p>
           </div>
@@ -33,13 +33,13 @@ export default function Services() {
               className={`nav-item  ${activeService == 1 ? "is-active" : ""} `}
               onClick={() => setActiveService(1)}
             >
-              Market Research &amp; Analysis
+              Brand Design &amp; Development
             </div>
             <div
               className={`nav-item  ${activeService == 2 ? "is-active" : ""} `}
               onClick={() => setActiveService(2)}
             >
-              Brand Development &amp; Positioning
+              Content Development &amp; Delivery
             </div>
             <div
               className={`nav-item  ${activeService == 3 ? "is-active" : ""} `}

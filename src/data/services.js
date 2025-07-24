@@ -101,17 +101,17 @@ export const services3 = [
   {
     id: 14,
     number: "01",
-    title: "Market Research & Analysis",
+    title: "Brand Design & Development",
     description:
-      "Gain actionable insights with our comprehensive market research and analysis services. We help you understand your audience, competitors, and industry trends.",
+      "Build a standout identity with our custom brand development and positioning services—designed to define your essence and communicate your value clearly.",
     image: "/images/section/service-9.jpg",
   },
   {
     id: 15,
     number: "02",
-    title: "Brand Development & Positioning",
+    title: "Content Development & Delivery",
     description:
-      "Craft a compelling identity that sets you apart. Our tailored brand development and positioning services help you define who you are, communicate your value",
+      "Discover what drives your market. Our in-depth research & content development help to connect with your core audience, competitor moves, and emerging trends.",
     image: "/images/section/service-10.jpg",
   },
   {
@@ -119,7 +119,7 @@ export const services3 = [
     number: "03",
     title: "Digital Marketing",
     description:
-      "Maximize your online presence with data-driven digital marketing strategies. We help you reach, engage, and convert your target audience across the digital landscape.",
+      "Unlock your brand’s full potential with data-backed digital strategies that drive reach, engagement, and conversions.",
     image: "/images/section/service-11.jpg",
   },
 ];
