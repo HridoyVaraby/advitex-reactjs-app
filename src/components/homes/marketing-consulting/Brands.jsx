@@ -33,12 +33,21 @@ export default function Brands() {
               }`}
               style={{ flex: "0 0 auto", display: "block" }}
             >
-              <div className="partner style-1">
+              <div className="partner" >
                 <img
                   alt={`Brand ${brand.id}`}
                   src={brand.src}
                   width={brand.width}
                   height={brand.height}
+                  style={{ 
+                    filter: 'grayscale(100%)', 
+                    transition: 'all 0.3s ease',
+                    opacity: 1,
+                    maxWidth: '100%',
+                    backgroundColor: 'transparent'
+                  }}
+                  onMouseOver={(e) => e.target.style.filter = 'none'}
+                  onMouseOut={(e) => e.target.style.filter = 'grayscale(100%)'}
                 />
               </div>
             </div>
