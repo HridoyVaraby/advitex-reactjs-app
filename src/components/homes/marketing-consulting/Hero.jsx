@@ -51,14 +51,14 @@ export default function Hero() {
             <div className="heading-title text-center mb_40">
               <div className="heading-tag d-flex gap_12 align-items-center mx-auto mb_20">
                 <div className="icon">
-                  <i className="icon-medal-first-place" />
+                  <i className="icon-Performance-Increase-1" />
                 </div>
                 <p className="text-body-3 text_mono-dark-10 fw-5">
-                  Top #1 Marketing Consulting Agency
+                  Marketing Consulting Agency
                 </p>
               </div>
               <h1 className="title text_mono-dark-9 fw-5 mb_28">
-                Purpose-driven smart  <span className="text-primary">marketing</span>{" "}
+                Purpose-driven smart  <span className="text-gradient">marketing</span>{" "}
                 solutions <br /> that fuel your brand’s growth.
               </h1>
               <p className="text_mono-gray-7 sub-heading">
@@ -88,13 +88,13 @@ export default function Hero() {
                     <span className="bg-effect" />
                   </button>
                 </div>
-              </form>
+              </form> */}
               <div className="facts d-flex align-items-center justify-content-center">
                 <div className="avatar-wrap d-flex">
                   <div className="avatar item-1">
                     <img
                       alt=""
-                      src="/images/avatar/facts-3.png"
+                      src="/images/avatar/brand-61.png"
                       width={28}
                       height={28}
                     />
@@ -102,7 +102,7 @@ export default function Hero() {
                   <div className="avatar item-2">
                     <img
                       alt=""
-                      src="/images/avatar/facts-4.png"
+                      src="/images/avatar/brand-62.png"
                       width={28}
                       height={28}
                     />
@@ -110,7 +110,7 @@ export default function Hero() {
                   <div className="avatar item-3">
                     <img
                       alt=""
-                      src="/images/avatar/facts-5.png"
+                      src="/images/avatar/brand-63.png"
                       width={28}
                       height={28}
                     />
@@ -118,16 +118,16 @@ export default function Hero() {
                   <div className="avatar item-4">
                     <img
                       alt=""
-                      src="/images/avatar/facts-6.png"
+                      src="/images/avatar/brand-64.png"
                       width={28}
                       height={28}
                     />
                   </div>
                 </div>
                 <p className="text-body-3 text_mono-dark-9">
-                  200+ Businesses Engaged
+                  220+ Successful Business Collaborations
                 </p>
-              </div> */}
+              </div> 
           </div>
         </div>
       </div>
