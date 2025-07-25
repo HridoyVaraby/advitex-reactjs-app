@@ -1883,12 +1883,25 @@ a {
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, #602D90 24.69%, #FBA819 54.15%);
+    background: linear-gradient(90deg, #41007E 24.69%, #B565FF 54.15%);
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     > .word > * {
-        background: linear-gradient(90deg, #602D90 24.69%, #FBA819 54.15%);
+        background: linear-gradient(90deg, #41007E 24.69%, #B565FF 54.15%);
+        background-clip: text !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+}
+
+.text-gradient-2 {
+    background: linear-gradient(90deg, #FF9500 24.69%, #feeec7 54.15%);
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    > .word > * {
+        background: linear-gradient(90deg, #FF9500 24.69%, #feeec7 54.15%);
         background-clip: text !important;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
