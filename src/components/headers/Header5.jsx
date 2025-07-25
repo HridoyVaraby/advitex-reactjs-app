@@ -37,7 +37,7 @@ export default function Header5() {
                     to={`/contact-us`}
                     className="tf-btn btn-dark hide-sm h36"
                   >
-                    <span className="text-body-4">Contact Us</span>
+                    <span className="text-body-1">Contact Us</span>
                     <span className="bg-effect" />
                   </Link>
                   <div
