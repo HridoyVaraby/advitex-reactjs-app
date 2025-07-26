@@ -129,19 +129,19 @@ export default function Features2() {
                 <div>
                   <ul className="list effect-item effect-right effect-3 mb_56">
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> We offering
+                      <i className="icon-check-cycle-line icon_secondary" /> We offering
                       customized strategies that truly work for you
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" />
+                      <i className="icon-check-cycle-line icon_secondary" />
                       Brings the knowledge and insights you need to make
                       informed decisions that drive success.
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> Flexible plans with the freedom to cancel anytime.
+                      <i className="icon-check-cycle-line icon_secondary" /> Flexible plans with the freedom to cancel anytime.
                     </li>
                     <li className="text-body-1 text_white">
-                      <i className="icon-check-cycle-line" /> Proven results. Trusted by satisfied clients.
+                      <i className="icon-check-cycle-line icon_secondary" /> Proven results. Trusted by satisfied clients.
                     </li>
                   </ul>
                   <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
@@ -154,18 +154,18 @@ export default function Features2() {
                       />
                     </div>
                     <div className="content">
-                      <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
+                      <p className="description fw-3 text-body-2 mb_4 text-secondary">
                         “It's a comprehensive tool of Advitex that we
-                        <span className="fw-6 text_color-text-1">
+                        <span className="fw-6 text-secondary">
                           rely on daily{" "}
                         </span>
                         to guide our
-                        <span className="fw-6 text_color-text-1">
+                        <span className="fw-6 text-secondary">
                           investment decisions
                         </span>
                         ”
                       </p>
-                      <div className="text-body-2 fw-6 text_color-text-1">
+                      <div className="text-body-2 fw-6 text-secondary">
                         John Sena - CEO of Kling
                       </div>
                     </div>
@@ -204,15 +204,16 @@ export default function Features2() {
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Tailored approaches 
+                    <i className="icon-check-cycle-line icon_secondary" /> Tailored approaches 
                     designed around your unique needs.
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Strategic insights
+                    <i className="icon-check-cycle-line icon_secondary" /> Strategic insights
                     that transform your goals into measurable results.
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> Agile solutions 
+                    <i className="icon-check-cycle-line icon_secondary" /> Agile solutions 
+
                     that evolve with your shifting priorities.
                   </li>
                 </ul>
@@ -226,12 +227,12 @@ export default function Features2() {
                     />
                   </div>
                   <div className="content">
-                    <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
+                    <p className="description fw-3 text-body-2 mb_4 text-secondary">
                       "Thanks to Advitex's stock planning tools, we have seen
                       remarkable stability in our investments, even during
                       volatile periods."
                     </p>
-                    <div className="text-body-2 fw-6 text_color-text-1">
+                    <div className="text-body-2 fw-6 text-secondary">
                       Alex Boar - CEO of Marcus
                     </div>
                   </div>
@@ -269,18 +270,19 @@ export default function Features2() {
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" /> End-to-end solutions customized to fit your needs
+                    <i className="icon-check-cycle-line icon_secondary" /> End-to-end solutions customized to fit your needs
+
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" />
+                    <i className="icon-check-cycle-line icon_secondary" />
                     Clear, transparent workflows that build trust
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" />
+                    <i className="icon-check-cycle-line icon_secondary" />
                     Expertise you can rely on for timely, high-quality results
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" />
+                    <i className="icon-check-cycle-line icon_secondary" />
                     Proven methodologies, validated by real client success stories
                   </li>
                 </ul>
@@ -294,12 +296,12 @@ export default function Features2() {
                     />
                   </div>
                   <div className="content">
-                    <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
+                    <p className="description fw-3 text-body-2 mb_4 text-secondary">
                       "Advitex's strategic insights have been crucial in
                       redefining our business path and keeping us ahead of the
                       curve."
                     </p>
-                    <div className="text-body-2 fw-6 text_color-text-1">
+                    <div className="text-body-2 fw-6 text-secondary">
                       Elise Chrona - CEO of Minga
                     </div>
                   </div>
@@ -337,15 +339,15 @@ export default function Features2() {
                 </div>
                 <ul className="list effect-item effect-right effect-3 mb_56">
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" />
+                    <i className="icon-check-cycle-line icon_secondary" />
                     Actionable insights that empower informed, success-oriented decisions
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" />
+                    <i className="icon-check-cycle-line icon_secondary" />
                     Agile strategies designed to refine, adapt, and enhance results continuously
                   </li>
                   <li className="text-body-1 text_white">
-                    <i className="icon-check-cycle-line" />
+                    <i className="icon-check-cycle-line icon_secondary" />
                     Agile strategies to refine and improve results
                   </li>
                 </ul>
@@ -359,14 +361,14 @@ export default function Features2() {
                     />
                   </div>
                   <div className="content">
-                    <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
+                    <p className="description fw-3 text-body-2 mb_4 text-secondary">
                       "Advitex's investment planning has
                       <span className="">simplified complex decisions</span> ,
                       giving us clarity and
-                      <span className="text_color-text-1 fw-6">confidence</span>
+                      <span className="text-secondary fw-6">confidence</span>
                       in our financial journey."
                     </p>
-                    <div className="text-body-2 fw-6 text_color-text-1">
+                    <div className="text-body-2 fw-6 text-secondary">
                       Elise Chrona - CEO of Minga
                     </div>
                   </div>
