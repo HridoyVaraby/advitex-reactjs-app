@@ -227,9 +227,9 @@ export default function Footer5() {
                 <div className="right">
                   <div className="footer-about">
                     <div className="footer-info mb_51">
-                      <a href="#" className="link text-body-2 text_white">
+                      <div className="text-body-2 text_white">
                         spread360.live@gmail.com
-                      </a>
+                      </div>
                       <div className="text-body-2 text_white">
                         House - 73, Road - 2, Block - A, Niketan, <br />
                         Gulshan 1, Dhaka - 1213, Bangladesh
