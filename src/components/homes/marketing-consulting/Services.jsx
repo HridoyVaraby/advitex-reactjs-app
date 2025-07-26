@@ -16,14 +16,14 @@ export default function Services() {
               <p className="text-body-3 fw-5">Services</p>
             </div>
             <h2 className="title text_mono-dark-9 fw-5 split-text effect-right">
-              Getting start is <span className="text-gradient">easy</span>
+              We are <span className="text-gradient">best</span> in
             </h2>
           </div>
           <div className="right">
             <p className="text-body-1 text_mono-gray-7 split-text split-lines-transform">
-              We are best in - Discover expert services crafted <br />
-              to elevate your business—from strategy to execution, <br />
-              execution, we deliver solutions.
+              Discover expert services crafted <br />
+              to elevate your business—from strategy to execution,
+              we deliver solutions.
             </p>
           </div>
         </div>
@@ -39,13 +39,13 @@ export default function Services() {
               className={`nav-item  ${activeService == 2 ? "is-active" : ""} `}
               onClick={() => setActiveService(2)}
             >
-              Content Development &amp; Delivery
+              Digital Marketing
             </div>
             <div
               className={`nav-item  ${activeService == 3 ? "is-active" : ""} `}
               onClick={() => setActiveService(3)}
             >
-              Digital Marketing
+              Content Development &amp; Delivery
             </div>
           </div>
           <div className="navigation-arrows">

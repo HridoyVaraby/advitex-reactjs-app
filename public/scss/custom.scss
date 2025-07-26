@@ -104,6 +104,10 @@
 .rc-slider .rc-slider-tracks {
   background-color: var(--Primary);
 }
+
+.icon-primary-color {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(34%) saturate(4207%) hue-rotate(251deg) brightness(91%) contrast(92%);
+}
 .add-cart.cart-added {
   background-color: var(--Primary);
   color: #fff;

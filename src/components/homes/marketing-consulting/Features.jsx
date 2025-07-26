@@ -21,6 +21,7 @@ export default function Features() {
             <div className="icon mb_24">
               <img
                 alt="icon"
+                className="icon-primary-color"
                 src="/images/box-icon/creative-solutions.svg"
                 width={29}
                 height={29}
@@ -39,6 +40,7 @@ export default function Features() {
             <div className="icon mb_24">
               <img
                 alt="icon"
+                className="icon-primary-color"
                 src="/images/box-icon/package-open.svg"
                 width={33}
                 height={32}
@@ -57,6 +59,7 @@ export default function Features() {
             <div className="icon mb_24">
               <img
                 alt="icon"
+                className="icon-primary-color"
                 src="/images/box-icon/laptop-issue.svg"
                 width={33}
                 height={32}
@@ -75,6 +78,7 @@ export default function Features() {
             <div className="icon mb_24">
               <img
                 alt="icon"
+                className="icon-primary-color"
                 src="/images/box-icon/auto-conversations.svg"
                 width={32}
                 height={32}
@@ -93,6 +97,7 @@ export default function Features() {
             <div className="icon mb_24">
               <img
                 alt="icon"
+                className="icon-primary-color"
                 src="/images/box-icon/database.svg"
                 width={33}
                 height={32}
@@ -111,6 +116,7 @@ export default function Features() {
             <div className="icon mb_24">
               <img
                 alt="icon"
+                className="icon-primary-color"
                 src="/images/box-icon/discover-circle.svg"
                 width={33}
                 height={32}

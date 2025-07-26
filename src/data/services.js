@@ -109,17 +109,17 @@ export const services3 = [
   {
     id: 15,
     number: "02",
-    title: "Content Development & Delivery",
+    title: "Digital Marketing",
     description:
-      "Discover what drives your market. Our in-depth research & content development help to connect with your core audience, competitor moves, and emerging trends.",
+      "Unlock your brand’s full potential with data-backed digital strategies that drive reach, engagement, and conversions.",
     image: "/images/section/service-10.jpg",
   },
   {
     id: 16,
     number: "03",
-    title: "Digital Marketing",
+    title: "Content Development & Delivery",
     description:
-      "Unlock your brand’s full potential with data-backed digital strategies that drive reach, engagement, and conversions.",
+      "Discover what drives your market. Our in-depth research & content development help to connect with your core audience, competitor moves, and emerging trends.",
     image: "/images/section/service-11.jpg",
   },
 ];
