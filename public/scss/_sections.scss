@@ -332,7 +332,7 @@
     }
   }
   &.style-2 {
-    background-color: #1c5551;
+    background-color: var(--Primary);
     position: relative;
     .tf-group-testimonial {
       animation: rotate 200s infinite linear;

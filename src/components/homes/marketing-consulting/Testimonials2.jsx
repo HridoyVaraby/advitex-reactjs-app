@@ -160,7 +160,7 @@ export default function Testimonials() {
     };
   }, []);
   return (
-    <div className="section-testimonial style-2 tf-spacing-23 pt-0 hide-md">
+        <div className="section-testimonial style-2 tf-spacing-23 hide-md">
       <div className="tf-container-2">
         <div className="row">
           <div className="col-12 position-relative testimonial-container">
