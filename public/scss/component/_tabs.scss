@@ -68,11 +68,7 @@
                 top: 0;
                 height: 100%;
                 width: 0;
-                background: linear-gradient(
-                    90.05deg,
-                    #ff3a2d 0.09%,
-                    #ffa13f 99.81%
-                );
+                background: linear-gradient(90deg, #41007E 24.69%, #B565FF 54.15%);
                 @include transition3();
                 border-radius: inherit;
             }
