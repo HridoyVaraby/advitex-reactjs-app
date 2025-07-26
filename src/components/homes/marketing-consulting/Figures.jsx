@@ -61,18 +61,11 @@ export default function Figures() {
               Where data <span className="text-gradient-2">reveals</span> our storys
             </h2>
           </div>
-          <div className="right">
-            <p className="text-body-1 text_mono-gray-5 mb_23 split-text split-lines-transform">
+          <div className="right align-bottom">
+            <p className="text-body-1 text_mono-gray-5 split-text split-lines-transform">
               Empowering businesses with data-driven strategies to <br />
               achieve sustainable growth and lasting impact.
             </p>
-            <Link
-              to={`/about`}
-              className="btn_link text-body-1 text_white link d-flex align-items-center gap_8"
-            >
-              <span>Explore</span>
-              <i className="icon-long-arrow-alt-right-solid" />
-            </Link>
           </div>
         </div>
         <div className="wrap-counter style-2 tf-grid-layout lg-col-4 sm-col-2 gap-0">
