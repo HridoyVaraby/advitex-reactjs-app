@@ -12,7 +12,7 @@ import Features2 from "@/components/homes/marketing-consulting/Features2";
 import Figures from "@/components/homes/marketing-consulting/Figures";
 import Hero from "@/components/homes/marketing-consulting/Hero";
 import Services from "@/components/homes/marketing-consulting/Services";
-import Testimonials from "@/components/homes/marketing-consulting/Testimonials";
+import Testimonials2 from "@/components/homes/marketing-consulting/Testimonials2";
 import React from "react";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
@@ -35,7 +35,7 @@ export default function MarketingConsultionPage() {
             <Features2 />
             <Figures />
             <CaseStudies />
-            <Testimonials />
+            <Testimonials2 />
             <About />
             <Banner />
             <Faqs />
