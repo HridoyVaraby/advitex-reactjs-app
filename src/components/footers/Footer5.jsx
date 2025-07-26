@@ -81,9 +81,8 @@ export default function Footer5() {
                   <div className="tf-collapse-content">
                     <div className="wrap-newsletter">
                       <div
-                        className={`tfSubscribeMsg  footer-sub-element ${
-                          showMessage ? "active" : ""
-                        }`}
+                        className={`tfSubscribeMsg  footer-sub-element ${showMessage ? "active" : ""
+                          }`}
                       >
                         {success ? (
                           <p style={{ color: "rgb(52, 168, 83)" }}>

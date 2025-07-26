@@ -247,6 +247,11 @@
         }
         .footer-menu-list {
             gap: 14px;
+            .footer-menu_item {
+                &:hover {
+                    color: var(--Secondary) !important;
+                }
+            }
         }
         .footer-heading {
             margin-bottom: 10px;
@@ -279,17 +284,6 @@
                 flex-direction: column;
             }
         }
-        .tf-social {
-            a {
-                background-color: var(--Primary);
-                color: var(--White);
-                border: none;
-                &:hover {
-                    background-color: var(--White);
-                    color: var(--Primary);
-                }
-            }
-        }
         .footer-bottom {
             padding-bottom: 27px;
             .wrapper {
@@ -301,6 +295,29 @@
             }
             .left {
                 gap: 15px;
+                .link {
+                    &:hover {
+                        color: var(--Secondary) !important;
+                    }
+                }
+            }
+        }
+        .footer-info {
+            .link {
+                &:hover {
+                    color: var(--Secondary) !important;
+                }
+            }
+        }
+        .tf-social {
+            a {
+                background-color: var(--Primary);
+                color: var(--White);
+                border: none;
+                &:hover {
+                    background-color: var(--White);
+                    color: var(--Primary);
+                }
             }
         }
     }
