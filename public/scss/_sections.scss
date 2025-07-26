@@ -941,7 +941,7 @@
         height: 48px;
         width: 48px;
         border-radius: 999px;
-        background-color: #ff7350;
+        background-color: var(--Secondary);
         @include flex(center, center);
       }
       .counter-item {
