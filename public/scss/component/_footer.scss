@@ -301,6 +301,13 @@
                     }
                 }
             }
+            p {
+                .link {
+                    &:hover {
+                        color: var(--Secondary) !important;
+                    }
+                }
+            }
         }
         .footer-info {
             .link {
