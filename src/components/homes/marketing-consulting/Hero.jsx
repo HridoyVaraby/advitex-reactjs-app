@@ -57,7 +57,7 @@ export default function Hero() {
                   Marketing Consulting Agency
                 </p>
               </div>
-              <h1 className="title text_mono-dark-9 fw-5 mb_28">
+              <h1 className="title text_mono-dark-9 fw-5 mb_28 split-text split-lines-rotation-x">
                 Purpose-driven smart  <span className="text-gradient">marketing</span>{" "}
                 solutions <br /> that fuel your brand’s growth.
               </h1>
