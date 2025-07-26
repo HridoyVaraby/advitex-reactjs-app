@@ -51,19 +51,19 @@ export const serviceBoxes = [
 export const services = [
   {
     id: 7,
-    title: "Personal Planning",
+    title: "Services",
   },
   {
     id: 8,
-    title: "Corporate Strategy",
+    title: "Case Study",
   },
   {
     id: 9,
-    title: "Investment Advisory",
+    title: "Career",
   },
   {
     id: 10,
-    title: "Risk Compliance",
+    title: "Testimonials",
   },
 ];
 

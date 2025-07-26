@@ -140,9 +140,9 @@ export default function Footer5() {
                     Our Social
                   </h6>
                   <div className="tf-social">
-                    <a href="#" className="icon-twitter-x" />
-                    <a href="#" className="icon-instagram" />
-                    <a href="#" className="icon-youtube" />
+                    <a href="https://www.linkedin.com/company/spreadcommunications/" className="icon-linkedin-in" />
+                    <a href="https://www.behance.net/spread360" className="icon-behance" />
+                    <a href="https://www.facebook.com/spreadcommunicationsnet/" className="icon-facebook-f" />
                   </div>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export default function Footer5() {
                       <ul className="footer-menu-list">
                         <li className="text-body-3 text_mono-gray-8">
                           <Link to={`/about`} className="link footer-menu_item">
-                            Page
+                            About Us
                           </Link>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
@@ -186,20 +186,15 @@ export default function Footer5() {
                             to={`/contact-us`}
                             className="link footer-menu_item"
                           >
-                            Blog
+                            Contact Us
                           </Link>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
                           <Link
-                            to={`/portfolio`}
+                            to={`/blog`}
                             className="link footer-menu_item"
                           >
-                            Project
-                          </Link>
-                        </li>
-                        <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`/faqs`} className="link footer-menu_item">
-                            Contact
+                            Blog/News Updates
                           </Link>
                         </li>
                       </ul>
@@ -212,18 +207,18 @@ export default function Footer5() {
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`/about`} className="link footer-menu_item">
-                            About Advitex
+                          <Link to={`#`} className="link footer-menu_item">
+                            WezappsTech
                           </Link>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`/blog`} className="link footer-menu_item">
-                            Blog
+                          <Link to={`#`} className="link footer-menu_item">
+                            The Station
                           </Link>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`/faqs`} className="link footer-menu_item">
-                            FAQs
+                          <Link to={`#`} className="link footer-menu_item">
+                            Taxolution
                           </Link>
                         </li>
                       </ul>
@@ -234,14 +229,14 @@ export default function Footer5() {
                   <div className="footer-about">
                     <div className="footer-info mb_51">
                       <a href="#" className="link text-body-2 text_white">
-                        themesflat@gmail.com
+                        spread360.live@gmail.com
                       </a>
                       <div className="text-body-2 text_white">
-                        152 Thatcher Road St, Mahattan, NY 10463, <br />
-                        United States
+                        House - 73, Road - 2, Block - A, Niketan, <br />
+                        Gulshan 1, Dhaka - 1213, Bangladesh
                       </div>
                       <div className="text-body-2 text_white">
-                        (+068) 568 9696
+                        +880 1701-000654
                       </div>
                     </div>
                   </div>
