@@ -150,7 +150,7 @@ export default function Footer5() {
                 <div className="left flex-md-row">
                   <div className="footer-col-block">
                     <div className="text-body-1 footer-heading footer-heading-mobile text_white fw-5">
-                      Services
+                      Useful Links
                     </div>
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
@@ -172,7 +172,7 @@ export default function Footer5() {
                   </div>
                   <div className="footer-col-block">
                     <div className="text-body-1 footer-heading footer-heading-mobile text_white fw-5">
-                      Home
+                      Company
                     </div>
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
@@ -207,7 +207,7 @@ export default function Footer5() {
                   </div>
                   <div className="footer-col-block">
                     <div className="text-body-1 footer-heading footer-heading-mobile text_white fw-5">
-                      Resources
+                      Our Concerns
                     </div>
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
@@ -260,12 +260,12 @@ export default function Footer5() {
                     </li>
                     <li>
                       <a href="#" className="link text_mono-gray-5 text-body-3">
-                        Terms of Services
+                        Terms & Conditions
                       </a>
                     </li>
                     <li>
                       <a href="#" className="link text_mono-gray-5 text-body-3">
-                        Virtual Reality
+                        Cookies
                       </a>
                     </li>
                   </ul>
@@ -279,11 +279,10 @@ export default function Footer5() {
                   </div>
                 </div>
                 <p className="text-body-3 text-center text_mono-gray-5">
-                  © {new Date().getFullYear()} Copyright by{" "}
+                  © {new Date().getFullYear()} Copyright by -{" "}
                   <a href="#" className="link text_mono-gray-5 text-body-3">
-                    Spread Communications
+                    Spread Communications.
                   </a>{" "}
-                  . All Right Reserved.
                 </p>
               </div>
             </div>
