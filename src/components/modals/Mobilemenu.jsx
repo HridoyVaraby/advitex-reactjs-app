@@ -21,7 +21,7 @@ export default function Mobilemenu() {
         <Link to={`/`} className="logo">
           <img
             alt="logo"
-            src="/images/logo/footer-logo.png"
+            src="/images/logo/spread_logo.png"
             width={390}
             height={80}
           />

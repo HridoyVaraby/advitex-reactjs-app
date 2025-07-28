@@ -7,8 +7,8 @@ import React from "react";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title:
-    "Contact Us || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+    "Contact Us || Spread Communications - Purpose-driven smart marketing solutions",
+  description: "Spread Communications - Purpose-driven smart marketing solutions",
 };
 export default function ContactUsPage() {
   return (

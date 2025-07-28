@@ -11,7 +11,7 @@ export default function Contact() {
               <div className="left">
                 <div className="heading">
                   <h1 className="mb_21">
-                    Success is a team play, right? Let’s work together!
+                    Ready to kick off your new project?
                   </h1>
                   <ul className="breadcrumb">
                     <li>
@@ -21,12 +21,17 @@ export default function Contact() {
                     </li>
                     <li>Contact</li>
                   </ul>
+                  <p className="text-body-1 text_mono-gray-6">
+                    Our expert marketing consulting services are crafted <br />
+                    to help your business realize its full potential,<br /> 
+                    starting with identifying growth opportunities.
+                  </p>
                 </div>
                 <div className="bot">
                   <div className="content mb-0">
-                    <h6>+068 5681 96 96</h6>
+                    <h6>+88 01701-000654</h6>
                     <p className="text-body-2 text_mono-gray-6">
-                      Call us for urgent
+                      Urgent Calls only
                     </p>
                   </div>
                 </div>
