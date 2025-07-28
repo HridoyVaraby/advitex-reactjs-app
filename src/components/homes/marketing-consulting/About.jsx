@@ -18,7 +18,7 @@ export default function About() {
                 </div>
                 <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x">
                   Take your <span className="text-gradient">marketing</span> <br /> strategies
-                   to the next <br /> level with us
+                  to the next <br /> level with us
                 </h2>
               </div>
               <div className="content">

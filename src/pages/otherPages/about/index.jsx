@@ -10,6 +10,7 @@ import Features2 from "@/components/homes/marketing-consulting/Features2";
 import Figures from "@/components/homes/marketing-consulting/Figures";
 import Features from "@/components/homes/marketing-consulting/Features";
 import FaqsMarketing from "@/components/homes/marketing-consulting/Faqs";
+import Banner from "@/components/homes/marketing-consulting/Banner";
 import React from "react";
 import { Link } from "react-router-dom";
 import OdometerComponent from "@/components/common/OdometerComponent";
@@ -164,6 +165,9 @@ export default function AboutPage() {
         </div>
         <Figures />
         <Features />
+        <div style={{ marginTop: '-140px' }}>
+          <Banner />
+        </div>
         <FaqsMarketing />
         {/*<Team />*/}
         {/*<Process />*/}
