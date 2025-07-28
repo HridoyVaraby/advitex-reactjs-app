@@ -153,10 +153,10 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="main-content style-1">
-        <About />
+        {/*<About />*/}
         <CustomAbout />
-        <Team />
-        <Process />
+        {/*<Team />*/}
+        {/*<Process />*/}
         <Testimonials />
         <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
         <Contact />
