@@ -1,11 +1,3 @@
-import {
-  blogPages,
-  homepages,
-  otherPages,
-  servicePages,
-  shopPages,
-} from "@/data/menu";
-
 import { Link, useLocation } from "react-router-dom";
 
 import React from "react";
@@ -13,7 +5,6 @@ import React from "react";
 export default function Mobilemenu() {
   const { pathname } = useLocation();
   const isActive = (link) => link.split("/")[1] == pathname.split("/")[1];
-  const isActiveParent = (links) => links.some((link) => isActive(link.href));
 
   return (
     <div className="offcanvas offcanvas-start canvas-mb" id="menu-mobile">
@@ -35,189 +26,48 @@ export default function Mobilemenu() {
           <div className="mb-content-top">
             <ul className="nav-ul-mb" id="wrapper-menu-navigation">
               <li
-                className={`nav-mb-item ${
-                  isActiveParent(homepages) ? "active" : ""
-                }`}
+                className={`nav-mb-item ${isActive("/") ? "active" : ""
+                  }`}
               >
-                <a
-                  href="#dropdown-menu-home"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-home"
-                >
-                  <span>Home</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-home"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {homepages.map((item, index) => (
-                      <li key={index}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to="/" className="mb-menu-link">
+                  Home
+                </Link>
               </li>
               <li
-                className={`nav-mb-item ${
-                  isActiveParent(otherPages) ? "active" : ""
-                }`}
+                className={`nav-mb-item ${isActive("/about") ? "active" : ""
+                  }`}
               >
-                <a
-                  href="#dropdown-menu-pages"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-pages"
-                >
-                  <span>Pages</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-pages"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {otherPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to="/about" className="mb-menu-link">
+                  About
+                </Link>
               </li>
               <li
-                className={`nav-mb-item ${
-                  isActiveParent(servicePages) ? "active" : ""
-                }`}
+                className={`nav-mb-item ${isActive("/services") ? "active" : ""
+                  }`}
               >
-                <a
-                  href="#dropdown-menu-services"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-services"
-                >
-                  <span>Serivce</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-services"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {servicePages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to="/services" className="mb-menu-link">
+                  Service
+                </Link>
               </li>
               <li
-                className={`nav-mb-item ${
-                  isActiveParent(blogPages) ? "active" : ""
-                }`}
+                className={`nav-mb-item ${isActive("/portfolio") ? "active" : ""
+                  }`}
               >
-                <a
-                  href="#dropdown-menu-blog"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-blog"
-                >
-                  <span>Blog</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-blog"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {blogPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to="/portfolio" className="mb-menu-link">
+                  Case Study
+                </Link>
               </li>
               <li
-                className={`nav-mb-item ${
-                  isActiveParent(shopPages) ? "active" : ""
-                }`}
+                className={`nav-mb-item ${isActive("/blog") ? "active" : ""
+                  }`}
               >
-                <a
-                  href="#dropdown-menu-shop"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-shop"
-                >
-                  <span>Shop</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-shop"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {shopPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to="/blog" className="mb-menu-link">
+                  Blog
+                </Link>
               </li>
               <li
-                className={`nav-mb-item ${
-                  isActive("/contact-us") ? "active" : ""
-                }`}
+                className={`nav-mb-item ${isActive("/contact-us") ? "active" : ""
+                  }`}
               >
                 <Link to={`/contact-us`} className="mb-menu-link">
                   Contact
@@ -230,38 +80,30 @@ export default function Mobilemenu() {
               <li>
                 <p className="text_mono-gray">
                   Address:
-                  <a
-                    target="_blank"
-                    href="https://www.google.com/maps?q=16/9,ScotlandUnitedKingdom"
-                  >
-                    <span className="fw-5 text_mono-gray-5">
-                      16/9, Scotland United Kingdom
-                    </span>
-                  </a>
+                  <span className="fw-5 text_mono-gray-5">
+                    House - 73, Road - 2, Block - A, Niketan,
+                    Gulshan 1, Dhaka - 1213, Bangladesh
+                  </span>
                 </p>
               </li>
               <li>
                 <p className="text_mono-gray">
                   Email:
-                  <a href="mailto:themesflat@gmail.com">
-                    <span className="fw-5 text_mono-gray-5">
-                      themesflat@gmail.com
-                    </span>
-                  </a>
+                  <span className="fw-5 text_mono-gray-5">
+                    spread360.live@gmail.com
+                  </span>
                 </p>
               </li>
               <li>
                 <p className="text_mono-gray">
                   Phone:
-                  <a href="tel:+11635565389">
-                    <span className="fw-5 text_mono-gray-5">
-                      +1 16355 65389
-                    </span>
-                  </a>
+                  <span className="fw-5 text_mono-gray-5">
+                    +880 1701-000654
+                  </span>
                 </p>
               </li>
             </ul>
-            <div className="mb-wrap-btn d-flex gap_12">
+            {/* <div className="mb-wrap-btn d-flex gap_12">
               <Link to={`/pricing`} className="tf-btn">
                 <span>Get Started</span>
                 <span className="bg-effect" />
@@ -270,7 +112,7 @@ export default function Mobilemenu() {
                 <span>Contact Us</span>
                 <span className="bg-effect" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
