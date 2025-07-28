@@ -1,20 +1,8 @@
 export const mapLocations = [
   {
-    src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d135905.11693909427!2d-73.95165795400088!3d41.17584829642291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1727094281524!5m2!1sen!2s",
-    location: "152 Thatcher Road St, Mahattan, NY 10463",
-    phone: "(+068) 456 6868",
-    email: "themesflat@gmail.com",
-  },
-  {
-    src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d135905.11693909427!2d-73.95165795400088!3d41.17584829642291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1727094281524!5m2!1sen!2s",
-    location: "1812 Sussex Dr, Ottawa, ON K1A 0G8, Canada",
-    phone: "(+054) 6789 38 83",
-    email: "themesflat@gmail.com",
-  },
-  {
-    src: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d135905.11693909427!2d-73.95165795400088!3d41.17584829642291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1727094281524!5m2!1sen!2s",
-    location: "Fürstenwalder Str. 1, 10243 Berlin, Germany",
-    phone: "(+054) 1234 79 97",
-    email: "themesflat@gmail.com",
+    src: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3651.1858909465263!2d90.40996157808226!3d23.77639393244311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRoad%20-%202%2C%20Block%20-%20A%2C%20Niketan%2C%20Gulshan%201%2C%20Dhaka%20-%201213%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1753688325063!5m2!1sen!2sbd",
+    location: "House - 73, Road - 2, Block - A, Niketan, Gulshan 1, Dhaka - 1213, Bangladesh",
+    phone: "+880 1701-000654",
+    email: "spread360.live@gmail.com",
   },
 ];

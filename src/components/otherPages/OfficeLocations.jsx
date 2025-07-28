@@ -3,14 +3,14 @@ import React from "react";
 
 export default function OfficeLocations() {
   return (
-    <div className="section-map tf-spacing-6">
+    <div className="section-map tf-spacing-6 mt-5">
       <div className="tf-container">
-        <div className="heading-seciton mb_83">
-          <h2 className="heading-title">Visit Our Offices</h2>
+        <div className="heading-seciton mb_83 text-center">
+          <h2 className="heading-title">Visit Our Office</h2>
         </div>
-        <div className="tf-grid-layout lg-col-3">
+        <div className="d-flex justify-content-center">
           {mapLocations.map((item, index) => (
-            <div key={index} className="map-item">
+            <div key={index} className="map-item" style={{ maxWidth: '400px', width: '100%' }}>
               <iframe
                 className="map"
                 src={item.src}
