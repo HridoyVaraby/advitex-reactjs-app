@@ -6,6 +6,10 @@ import Header5 from "@/components/headers/Header5";
 import About from "@/components/otherPages/About";
 import Process from "@/components/otherPages/Process";
 import Team from "@/components/otherPages/Team";
+import Features2 from "@/components/homes/marketing-consulting/Features2";
+import Figures from "@/components/homes/marketing-consulting/Figures";
+import Features from "@/components/homes/marketing-consulting/Features";
+import FaqsMarketing from "@/components/homes/marketing-consulting/Faqs";
 import React from "react";
 import { Link } from "react-router-dom";
 import OdometerComponent from "@/components/common/OdometerComponent";
@@ -155,10 +159,16 @@ export default function AboutPage() {
       <div className="main-content style-1">
         {/*<About />*/}
         <CustomAbout />
+        <div style={{ marginTop: '80px' }}>
+          <Features2 />
+        </div>
+        <Figures />
+        <Features />
+        <FaqsMarketing />
         {/*<Team />*/}
         {/*<Process />*/}
-        <Testimonials />
-        <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
+        {/*<Testimonials />
+        <Faqs parentClass="section-faqs style-1 tf-spacing-8" />*/}
         <Contact />
       </div>
       <Footer5 nonHomepage={true} />
