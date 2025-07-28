@@ -10,14 +10,14 @@ export default function Contact() {
             <div className="left">
               <div className="heading">
                 <div className="h1 split-text split-lines-rotation-x">
-                  Success is a team play, right? Let’s work together!
+                  Ready to kick off your new project?
                 </div>
               </div>
               <div className="bot">
                 <div className="content">
-                  <h6 className="mb_5">+068 5681 96 96</h6>
+                  <h6 className="mb_5">+88 01701-000654</h6>
                   <p className="text-body-2 text_mono-gray-6">
-                    Call us for urgent
+                    Urgent Calls only
                   </p>
                 </div>
                 <Link to={`/contact-us`} className="tf-btn btn-primary2 h36">
