@@ -1,5 +1,5 @@
 import Contact from "@/components/common/Contact";
-import Faqs from "@/components/common/Faqs";
+import Faqs from "@/components/homes/marketing-consulting/Faqs";
 import { Link } from "react-router-dom";
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
@@ -48,7 +48,7 @@ export default function PortfolioPage() {
       </div>
       <div className="main-content style-1">
         <Portfolio />
-        <Faqs parentClass="section-faqs style-1 tf-spacing-8 pt-0" />
+        <Faqs />
         <Contact />
       </div>
       <Footer5 nonHomepage={true} />

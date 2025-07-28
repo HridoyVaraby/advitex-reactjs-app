@@ -104,15 +104,13 @@ export default function Faqs() {
           {faqData.map((faq) => (
             <li
               key={faq.id}
-              className={`accordion-item action_click style-default v4 scrolling-effect effectRight ${
-                faq.isActive ? "active" : ""
-              }`}
+              className={`accordion-item action_click style-default v4 scrolling-effect effectRight ${faq.isActive ? "active" : ""
+                }`}
             >
               <a
                 href={`#accordion-4-${faq.id}`}
-                className={`action accordion-title current ${
-                  faq.isActive ? "" : "collapsed"
-                }`}
+                className={`action accordion-title current ${faq.isActive ? "" : "collapsed"
+                  }`}
                 data-bs-toggle="collapse"
                 aria-expanded={faq.isActive ? "true" : "false"}
                 aria-controls={`accordion-4-${faq.id}`}
