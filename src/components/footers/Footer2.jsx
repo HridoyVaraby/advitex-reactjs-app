@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { services } from "@/data/services";
-export default function Footer2() {
+export default function Footer2({ nonHomepage = false }) {
   useEffect(() => {
     const headings = document.querySelectorAll(".footer-heading-mobile");
 
@@ -32,7 +32,7 @@ export default function Footer2() {
   }, []); // Empty dependency array means this will run only once on mount
 
   return (
-    <footer id="footer" className="footer style-1">
+    <footer id="footer" className={`footer style-1${nonHomepage ? ' non-homepage' : ''}`}>
       <div className="footer-wrap">
         <div className="tf-container">
           <div className="footer-body">

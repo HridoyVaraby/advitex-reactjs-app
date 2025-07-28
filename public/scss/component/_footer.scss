@@ -68,6 +68,11 @@
         .footer-logo {
             width: 160px;
         }
+        
+        // Add padding-top for non-homepage pages
+        &.non-homepage {
+            padding-top: 60px;
+        }
         .contact {
             li {
                 display: flex;
@@ -140,6 +145,11 @@
                 }
             }
         }
+        
+        // Add additional padding-top for non-homepage pages
+        &.non-homepage {
+            padding-top: 133px; // 73px + 60px
+        }
         .form-newsletter {
             fieldset input {
                 background-color: var(--Mono-gray-2);
@@ -192,6 +202,11 @@
         .footer-bottom {
             --Primary: #0075ff;
         }
+        
+        // Add additional padding-top for non-homepage pages
+        &.non-homepage {
+            padding-top: 120px; // 60px + 60px
+        }
         .description {
             a {
                 &:hover {
@@ -239,6 +254,11 @@
 
         .footer-logo {
             width: 256px;
+        }
+        
+        // Add padding-top for non-homepage pages
+        &.non-homepage {
+            padding-top: 60px;
         }
         .footer-top {
             display: flex;

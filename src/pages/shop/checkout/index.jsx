@@ -43,7 +43,7 @@ export default function CheckoutPage() {
         <Checkout />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

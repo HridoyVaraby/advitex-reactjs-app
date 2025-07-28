@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 import { services } from "@/data/services";
-export default function Footer5() {
+export default function Footer5({ parentClass = "footer style-4", nonHomepage = false }) {
   const [success, setSuccess] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
   const handleShowMessage = () => {
@@ -68,7 +68,7 @@ export default function Footer5() {
   }, []); // Empty dependency array means this will run only once on mount
 
   return (
-    <footer id="footer" className="footer style-4">
+    <footer id="footer" className={`${parentClass}${nonHomepage ? ' non-homepage' : ''}`}>
       <div className="footer-wrap">
         <div className="tf-container">
           <div className="row justify-content-center">

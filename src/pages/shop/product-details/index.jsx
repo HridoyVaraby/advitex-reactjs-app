@@ -54,7 +54,7 @@ export default async function ProductDetailsPage() {
         <RelatedProducts />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

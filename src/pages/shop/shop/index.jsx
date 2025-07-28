@@ -40,7 +40,7 @@ export default function ShopPage() {
         <Shop />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

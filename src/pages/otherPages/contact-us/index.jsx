@@ -22,7 +22,7 @@ export default function ContactUsPage() {
       <div className="main-content style-1">
         <OfficeLocations />
       </div>
-      <Footer5 />
+      <Footer5 nonHomepage={true} />
     </>
   );
 }

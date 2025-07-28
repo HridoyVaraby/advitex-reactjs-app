@@ -52,7 +52,7 @@ export default function PortfolioPage() {
         <Faqs parentClass="section-faqs style-1 tf-spacing-8 pt-0" />
         <Contact />
       </div>
-      <Footer5 />
+      <Footer5 nonHomepage={true} />
     </>
   );
 }

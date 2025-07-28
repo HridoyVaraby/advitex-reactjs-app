@@ -44,7 +44,7 @@ export default function CartPage() {
         <ShopCart />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

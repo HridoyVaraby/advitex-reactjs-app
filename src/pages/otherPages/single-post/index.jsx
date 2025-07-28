@@ -54,7 +54,7 @@ export default function BlogDetailsPage1() {
       <div className="main-content style-1">
         <BlogDetails />
       </div>
-      <Footer1 parentClass="footer style-default has-border-top" />
+      <Footer1 parentClass="footer style-default has-border-top" nonHomepage={true} />
     </>
   );
 }

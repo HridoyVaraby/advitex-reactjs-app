@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-export default function Footer3() {
+export default function Footer3({ nonHomepage = false }) {
   const [success, setSuccess] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
   const handleShowMessage = () => {
@@ -67,7 +67,7 @@ export default function Footer3() {
   }, []); // Empty dependency array means this will run only once on mount
 
   return (
-    <footer id="footer" className="footer style-2">
+    <footer id="footer" className={`footer style-2${nonHomepage ? ' non-homepage' : ''}`}>
       <div className="footer-wrap">
         <div className="tf-container">
           <div className="footer-body">

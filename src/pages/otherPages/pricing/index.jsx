@@ -51,7 +51,7 @@ export default function PricingPage() {
         <Faqs parentClass="section-faqs style-1 tf-spacing-8 pt-0" />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

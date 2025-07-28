@@ -50,7 +50,7 @@ export default function FaqsPage() {
         />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

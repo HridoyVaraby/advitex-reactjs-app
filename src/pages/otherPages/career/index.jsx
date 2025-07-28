@@ -50,7 +50,7 @@ export default function CareerPage() {
         <Oppertunities />
         <Contact />
       </div>
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

@@ -58,7 +58,7 @@ export default function ServicesPage() {
         <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
         <Contact />
       </div>
-      <Footer5 />
+      <Footer5 nonHomepage={true} />
     </>
   );
 }

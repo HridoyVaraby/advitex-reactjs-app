@@ -47,7 +47,7 @@ export default function NotFoundPage() {
         </div>
       </div>
 
-      <Footer1 />
+      <Footer1 nonHomepage={true} />
     </>
   );
 }

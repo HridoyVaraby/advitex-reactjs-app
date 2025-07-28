@@ -46,7 +46,7 @@ export default function BlogPage() {
       <div className="main-content style-1">
         <Blogs />
       </div>
-      <Footer5 parentClass="footer style-default has-border-top" />
+      <Footer5 parentClass="footer style-default has-border-top" nonHomepage={true} />
     </>
   );
 }
