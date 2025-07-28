@@ -567,6 +567,7 @@
 .section-contact {
   &.style-default {
     overflow: hidden;
+    background: linear-gradient(103.01deg, #eff4ff 0%, #c9d9ff 100.23%);
     padding-top: 110px;
     padding-bottom: 122px;
     border-radius: 40px 40px 0 0;
@@ -589,6 +590,11 @@
       left: -10%;
     }
   }
+}
+
+// Override for contact page hero - remove background to inherit from wrap-page-header
+.page-title.style-default .section-contact.style-default {
+  background: none;
   &.style-1 {
     .box-inner {
       background-image: url(/images/item/bg-faq.png);

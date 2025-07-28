@@ -23,7 +23,7 @@ export default function Contact() {
                   </ul>
                   <p className="text-body-1 text_mono-gray-6">
                     Our expert marketing consulting services are crafted <br />
-                    to help your business realize its full potential,<br /> 
+                    to help your business realize its full potential,<br />
                     starting with identifying growth opportunities.
                   </p>
                 </div>
