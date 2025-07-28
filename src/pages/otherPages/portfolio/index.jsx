@@ -24,8 +24,8 @@ export default function PortfolioPage() {
               <div className="col-12">
                 <div className="heading mb_51">
                   <h1 className="text_black mb_18 letter-spacing-1">
-                    A deep diving into <br />
-                    the success of Advitex
+                    A closer look at what <br />
+                    makes Spread Communications successful
                   </h1>
                   <p className="sub-heading text_mono-gray-7">
                     A deep dive into Advitex's success reveals a compelling case
