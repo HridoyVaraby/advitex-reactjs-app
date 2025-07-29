@@ -18,6 +18,9 @@ export default function Nav() {
       <li className={`${isActive("/services") ? "current-menu" : ""}`}>
         <Link to="/services">Service</Link>
       </li>
+      <li className={`${isActive("/testimonials") ? "current-menu" : ""}`}>
+        <Link to="/testimonials">Testimonials</Link>
+      </li>
       <li className={`${isActive("/portfolio") ? "current-menu" : ""}`}>
         <Link to="/portfolio">Case Study</Link>
       </li>

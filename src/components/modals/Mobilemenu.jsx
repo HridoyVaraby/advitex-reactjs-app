@@ -50,6 +50,14 @@ export default function Mobilemenu() {
                 </Link>
               </li>
               <li
+                className={`nav-mb-item ${isActive("/testimonials") ? "active" : ""
+                  }`}
+              >
+                <Link to="/testimonials" className="mb-menu-link">
+                  Testimonials
+                </Link>
+              </li>
+              <li
                 className={`nav-mb-item ${isActive("/portfolio") ? "active" : ""
                   }`}
               >
