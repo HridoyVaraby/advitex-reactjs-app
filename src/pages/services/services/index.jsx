@@ -50,7 +50,7 @@ export default function ServicesPage() {
       <div className="main-content style-1">
         <InsuranceServices />
         <ServiceAdvantages />
-        <Services />
+        {/*<Services />*/}
         <Challanges />
         <Testimonials />
         <Faqs parentClass="section-faqs style-1 tf-spacing-8" />

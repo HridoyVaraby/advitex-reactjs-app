@@ -4,21 +4,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const slides = [
   {
     icon: "icon-Performance-Increase-1",
-    title: "Enhanced Efficiency",
+    title: "Strategic Brand Building",
     description:
-      "Through the implementation of our innovative solutions, your organization can streamline operations, reduce costs, and significantly boost productivity, leading to increased profitability and long-term success.",
+      "We craft unique brand identities that connect, inspire, and stand out in crowded markets.",
   },
   {
     icon: "icon-Analytics-Board-Bars",
-    title: "Data-Driven Insights",
+    title: "Creative Excellence",
     description:
-      "By utilizing advanced analytics, organizations can delve deep into their data to uncover hidden patterns, trends, and correlations, enabling them to make more informed, data driven decisions that drive business growth and innovation.",
+      "From visuals to storytelling, our content is designed to engage audiences and elevate your presence.",
   },
   {
     icon: "icon-Exceeding-Expectations",
-    title: "Exceeding Expectations",
+    title: "End-to-End Solutions",
     description:
-      "By consistently delivering exceptional customer experiences, organizations can cultivate a loyal customer base, increase customer satisfaction, and ultimately drive long-term business growth and profitability.",
+      "Everything you need — from brand launches to digital campaigns — all under one roof.",
+  },
+  {
+    icon: "icon-professional-development",
+    title: "Results-Driven Approach",
+    description:
+      "Our strategies focus on real outcomes: visibility, engagement, and measurable growth.",
   },
 ];
 
@@ -29,14 +35,13 @@ export default function ServiceAdvantages() {
         <div className="heading-section mb_100">
           <h2>Advantages Of Our Service</h2>
           <p className="text-body-1 text_mono-gray-7 mt_20">
-            Our service streamlines your processes, saving you time and
-            resources.
+          Our full-range branding and marketing solutions with Complete branding and marketing support.
           </p>
         </div>
         <Swiper
           className="swiper sw-layout"
-          data-preview={3}
-          data-tablet={2}
+          data-preview={4}
+          data-tablet={3}
           data-mobile={1}
           breakpoints={{
             0: { slidesPerView: 1 },
@@ -44,11 +49,11 @@ export default function ServiceAdvantages() {
               slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             992: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 24,
             },
           }}
