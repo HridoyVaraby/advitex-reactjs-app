@@ -1,6 +1,7 @@
 import { blogArticles3 } from "@/data/blogs";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 export default function Blogs() {
@@ -31,14 +32,14 @@ export default function Blogs() {
                 >
                   <path
                     d="M4 12L20 12"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M8.99996 17C8.99996 17 4.00001 13.3176 4 12C3.99999 10.6824 9 7 9 7"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -55,14 +56,14 @@ export default function Blogs() {
                 >
                   <path
                     d="M20 12L4 12"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M15 17C15 17 20 13.3176 20 12C20 10.6824 15 7 15 7"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -76,6 +77,11 @@ export default function Blogs() {
       <div className="tf-container-2 slider-layout-right">
         <Swiper
           className="swiper"
+          modules={[Navigation]}
+          navigation={{
+            prevEl: ".nav-prev-layout-1",
+            nextEl: ".nav-next-layout-1",
+          }}
           breakpoints={{
             0: { slidesPerView: 1.2 },
             575: {
