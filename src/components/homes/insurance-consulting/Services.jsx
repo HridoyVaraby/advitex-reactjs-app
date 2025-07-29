@@ -25,13 +25,13 @@ export default function Services() {
             </p>
           </div>
           <div className="right">
-            <Link
+            {/*<Link
               to={`/services`}
               className="tf-btn height-3 rounded-12 btn-px-28"
             >
               <span>See our services</span>
               <span className="bg-effect" />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="tf-grid-layout lg-col-3">
