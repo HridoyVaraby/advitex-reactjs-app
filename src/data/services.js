@@ -100,7 +100,7 @@ export const services2 = [
     title: "Social Media Marketing",
     description:
       "Managing and growing your brand presence across social channels with targeted campaigns.",
-    icon: "/images/box-icon/share-07.svg",
+    icon: "/images/box-icon/bullhorn.svg",
     bgColor: "bg-color-blue",
     delay: ".4s",
   },
@@ -109,7 +109,7 @@ export const services2 = [
     title: "Website & Landing Page Creation",
     description:
       "Creating responsive, user-friendly websites and landing pages that showcase your brand and drive conversions.",
-    icon: "/images/box-icon/monitor-01.svg",
+    icon: "/images/box-icon/website.svg",
     bgColor: "bg-color-purple",
     delay: ".5s",
   },
@@ -118,7 +118,7 @@ export const services2 = [
     title: "Market Research & Insights",
     description:
       "Providing valuable market analysis to inform effective branding and marketing decisions.",
-    icon: "/images/box-icon/bar-chart-square-02.svg",
+    icon: "/images/box-icon/search.svg",
     bgColor: "bg-color-orange",
     delay: ".6s",
   },
