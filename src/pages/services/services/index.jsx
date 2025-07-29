@@ -1,6 +1,6 @@
 import Challanges from "@/components/common/Challanges";
 import Contact from "@/components/common/Contact";
-import Faqs from "@/components/common/Faqs";
+import Faqs from "@/components/homes/marketing-consulting/Faqs";
 
 import Testimonials from "@/components/common/Testimonials";
 import Footer5 from "@/components/footers/Footer5";
@@ -53,7 +53,9 @@ export default function ServicesPage() {
         {/*<Services />*/}
         <Challanges />
         <Testimonials />
-        <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
+        <div style={{ marginTop: '80px' }}>
+          <Faqs />
+        </div>
         <Contact />
       </div>
       <Footer5 nonHomepage={true} />
