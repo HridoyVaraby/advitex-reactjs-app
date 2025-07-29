@@ -70,27 +70,27 @@ export const services = [
 export const services2 = [
   {
     id: 11,
-    title: "Health Insurance",
+    title: "Brand Design & Development",
     description:
-      "Health insurance covers medical expenses, such as doctor visits, hospital stays & prescription drugs.",
+      "Build a standout identity with our custom brand development and positioning services—designed to define your essence and communicate your value clearly.",
     icon: "/images/box-icon/medical-circle.svg",
     bgColor: "bg-color-yellow",
     delay: "0s",
   },
   {
     id: 12,
-    title: "Property Insurance",
+    title: "Digital Marketing",
     description:
-      "Property insurance protects your belongings from damage or loss caused by events like fire, theft, or natural disasters",
+      "Unlock your brand’s full potential with data-backed digital strategies that drive reach, engagement, and conversions.",
     icon: "/images/box-icon/coins-stacked.svg",
     bgColor: "bg-color-green",
     delay: ".2s",
   },
   {
     id: 13,
-    title: "Business Insurance",
+    title: "Content Development & Delivery",
     description:
-      "Business insurance protects your company from various risks, such as property damage",
+      "Discover what drives your market. Our in-depth research & content development help to connect with your core audience, competitor moves, and emerging trends.",
     icon: "/images/box-icon/building-07.svg",
     bgColor: "bg-color-red",
     delay: ".3s",

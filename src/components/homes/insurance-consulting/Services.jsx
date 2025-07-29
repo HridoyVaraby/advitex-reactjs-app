@@ -54,13 +54,13 @@ export default function Services() {
                   </Link>
                 </h3>
                 <p className="text-body-1 mb_23">{service.description}</p>
-                <Link
+                {/*<Link
                   to={`/service-details/${service.id}`}
                   className="tf-btn-link"
                 >
                   <span> Learn more </span>
                   <i className="icon-arrow-top-right"> </i>
-                </Link>
+                </Link> */}
               </div>
               <div
                 className="item scroll-tranform"
