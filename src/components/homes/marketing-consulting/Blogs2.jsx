@@ -1,6 +1,7 @@
 import { blogArticles3 } from "@/data/blogs";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 export default function Blogs2() {
@@ -76,6 +77,11 @@ export default function Blogs2() {
       <div className="tf-container-2 slider-layout-right">
         <Swiper
           className="swiper"
+          modules={[Navigation]}
+          navigation={{
+            prevEl: ".nav-prev-layout-1",
+            nextEl: ".nav-next-layout-1",
+          }}
           breakpoints={{
             0: { slidesPerView: 1.2 },
             575: {
