@@ -5,7 +5,7 @@ import Footer5 from "@/components/footers/Footer5";
 import TestimonialsComponent from "@/components/common/Testimonials";
 import BrandGrid from "@/components/otherPages/BrandGrid";
 import Cta from "@/components/homes/insurance-consulting/Cta";
-import Blogs from "@/components/homes/marketing-consulting/Blogs";
+import Blogs from "@/components/homes/marketing-consulting/Blogs2";
 import Contact from "@/components/common/Contact";
 import MetaComponent from "@/components/common/MetaComponent";
 

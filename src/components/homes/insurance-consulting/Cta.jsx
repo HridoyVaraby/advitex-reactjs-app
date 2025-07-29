@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Cta() {
   return (
-    <div className="section-work style-2 tf-spacing-23">
+    <div className="section-work style-2">
       <div className="tf-container">
         <div className="box-inner position-relative">
           <div className="heading-section text-center mb_56">
