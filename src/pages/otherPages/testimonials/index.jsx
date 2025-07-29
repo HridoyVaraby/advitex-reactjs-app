@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header5 from "@/components/headers/Header5";
 import Footer5 from "@/components/footers/Footer5";
-import TestimonialsComponent from "@/components/homes/insurance-consulting/Testimonials";
+import TestimonialsComponent from "@/components/common/Testimonials";
 import BrandGrid from "@/components/otherPages/BrandGrid";
+import Cta from "@/components/homes/insurance-consulting/Cta";
+import Blogs from "@/components/homes/marketing-consulting/Blogs";
+import Contact from "@/components/common/Contact";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
@@ -47,6 +50,9 @@ export default function TestimonialsPage() {
       <div className="main-content style-1">
         <TestimonialsComponent />
         <BrandGrid />
+        <Cta />
+        <Blogs />
+        <Contact />
       </div>
       <Footer5 nonHomepage={true} />
     </>
