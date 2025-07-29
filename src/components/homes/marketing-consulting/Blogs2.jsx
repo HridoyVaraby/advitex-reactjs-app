@@ -3,20 +3,20 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
-export default function Blogs() {
+export default function Blogs2() {
   return (
     <div className="section-blog style-1 sw-layout-1 tf-spacing-44">
       <div className="tf-container-2">
         <div className="heading-section d-flex gap_12 justify-content-between align-items-end flex-wrap-md mb_59">
           <div className="left">
-            <div className="heading-tag v2 d-flex gap_12 mb_20 text_mono-gray-5 fw-5">
+            <div className="heading-tag v2 d-flex gap_12 mb_20 text_mono-dark-8 fw-5">
               <div className="icon">
-                <i className="icon-blogger text_mono-gray-5" />
+                <i className="icon-blogger text_mono-dark-8" />
               </div>
-              <p className="text-body-3 fw-5">Blogs</p>
+              <p className="text-body-3 fw-5 text_mono-dark-8">Blogs</p>
             </div>
-            <h2 className="title text_white fw-5">
-              Our worthwhile <span className="text-gradient-2">blogs</span>
+            <h2 className="title text_mono-dark-9 fw-5">
+              Our worthwhile <span className="text-gradient">blogs</span>
             </h2>
           </div>
           <div className="right">
@@ -31,14 +31,14 @@ export default function Blogs() {
                 >
                   <path
                     d="M4 12L20 12"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M8.99996 17C8.99996 17 4.00001 13.3176 4 12C3.99999 10.6824 9 7 9 7"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -55,14 +55,14 @@ export default function Blogs() {
                 >
                   <path
                     d="M20 12L4 12"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M15 17C15 17 20 13.3176 20 12C20 10.6824 15 7 15 7"
-                    stroke="white"
+                    stroke="#333"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -120,11 +120,11 @@ export default function Blogs() {
                   />
                 </Link>
                 <div className="article-content">
-                  <p className="text-body-1 text_mono-gray-5 mb_8">
+                  <p className="text-body-1 text_mono-gray-7 mb_8">
                     {article.date}
                   </p>
-                  <h6 className="title fw-5 letter-spacing-2 text_white">
-                    <Link to={`/single-post/${article.id}`} className="link">
+                  <h6 className="title fw-5 letter-spacing-2 text_mono-dark-9">
+                    <Link to={`/single-post/${article.id}`} className="link text_mono-dark-9">
                       {article.title}
                     </Link>
                   </h6>

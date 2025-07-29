@@ -280,3 +280,20 @@ Testimonials Page Specific Fixes
     }
   }
 }
+
+// Blogs2 component specific styles for light backgrounds
+.section-blog.style-1 {
+  .sw-button.style-default.has-bg {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e5e5e5 !important;
+    
+    &:hover {
+      background-color: var(--Primary) !important;
+      border-color: var(--Primary) !important;
+      
+      svg path {
+        stroke: #fff !important;
+      }
+    }
+  }
+}
