@@ -95,11 +95,38 @@ export const services2 = [
     bgColor: "bg-color-red",
     delay: ".3s",
   },
+  {
+    id: 14,
+    title: "Social Media Marketing",
+    description:
+      "Managing and growing your brand presence across social channels with targeted campaigns.",
+    icon: "/images/box-icon/share-07.svg",
+    bgColor: "bg-color-blue",
+    delay: ".4s",
+  },
+  {
+    id: 15,
+    title: "Website & Landing Page Creation",
+    description:
+      "Creating responsive, user-friendly websites and landing pages that showcase your brand and drive conversions.",
+    icon: "/images/box-icon/monitor-01.svg",
+    bgColor: "bg-color-purple",
+    delay: ".5s",
+  },
+  {
+    id: 16,
+    title: "Market Research & Insights",
+    description:
+      "Providing valuable market analysis to inform effective branding and marketing decisions.",
+    icon: "/images/box-icon/bar-chart-square-02.svg",
+    bgColor: "bg-color-orange",
+    delay: ".6s",
+  },
 ];
 
 export const services3 = [
   {
-    id: 14,
+    id: 17,
     number: "01",
     title: "Brand Design & Development",
     description:
@@ -107,7 +134,7 @@ export const services3 = [
     image: "/images/section/service-9.jpg",
   },
   {
-    id: 15,
+    id: 18,
     number: "02",
     title: "Digital Marketing",
     description:
@@ -115,7 +142,7 @@ export const services3 = [
     image: "/images/section/service-10.jpg",
   },
   {
-    id: 16,
+    id: 19,
     number: "03",
     title: "Content Development & Delivery",
     description:
@@ -126,7 +153,7 @@ export const services3 = [
 
 export const services4 = [
   {
-    id: 17,
+    id: 20,
     title: "Business Strategy <br /> Planning",
 
     imgSrc: "/images/box-icon/business-idea.png",
@@ -141,7 +168,7 @@ export const services4 = [
     ],
   },
   {
-    id: 18,
+    id: 21,
     title: "Financial Consulting <br /> &amp; Strategy",
     imgSrc: "/images/box-icon/currency-exchange.png",
     description:
@@ -155,7 +182,7 @@ export const services4 = [
     ],
   },
   {
-    id: 19,
+    id: 22,
     title: "Operations &amp; Analyst <br /> Improvement",
     imgSrc: "/images/box-icon/stock-market.png",
     description:
@@ -169,7 +196,7 @@ export const services4 = [
     ],
   },
   {
-    id: 20,
+    id: 23,
     title: "Tailor Personnel <br /> Consulting",
     imgSrc: "/images/box-icon/email-marketing.png",
     description:
