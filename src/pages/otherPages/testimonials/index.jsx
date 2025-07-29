@@ -26,12 +26,11 @@ export default function TestimonialsPage() {
               <div className="col-12">
                 <div className="heading mb_51">
                   <h1 className="text_black mb_16 letter-spacing-1">
-                    Client Success Stories
+                    A closer look at what <br /> our clients say
                   </h1>
                   <p className="sub-heading text_mono-gray-7">
-                    Discover how we've helped businesses transform their brand presence<br />
-                    and achieve remarkable growth through strategic marketing solutions.<br />
-                    Real stories from real clients who trusted us with their vision.
+                    Hear directly from our clients about their experiences <br /> 
+                    and the impact we’ve made on their brands.
                   </p>
                 </div>
                 <ul className="breadcrumb">
@@ -47,7 +46,7 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </div>
-      <div className="main-content style-1">
+      <div className="main-content style-1 testimonials-page">
         <TestimonialsComponent />
         <BrandGrid />
         <Cta />

@@ -52,11 +52,11 @@ export default function BrandGrid() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section text-center mb_63">
-              <h3 className="text_mono-dark-9 split-text effect-right">
-                Trusted by Leading Brands
-              </h3>
+              <h2 className="title split-text effect-right">
+                Companies who trusted on us
+              </h2>
               <p className="text-body-1 text_mono-gray-7 mt_20">
-                We're proud to partner with innovative companies across industries
+                Trusted by leading companies across industries, we deliver results that speak for themselves.
               </p>
             </div>
           </div>
