@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
 import Blogs from "@/components/otherPages/Blogs";
+import Contact from "@/components/common/Contact";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Blog || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+  title: "Blog || Spread Communications - Purpose-driven smart marketing solutions",
+  description: "Spread Communications - Purpose-driven smart marketing solutions",
 };
 import React from "react";
 
@@ -46,6 +47,7 @@ export default function BlogPage() {
       <div className="main-content style-1">
         <Blogs />
       </div>
+      <Contact />
       <Footer5 parentClass="footer style-default has-border-top" nonHomepage={true} />
     </>
   );
