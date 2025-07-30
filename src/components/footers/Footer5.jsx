@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-
-import { services } from "@/data/services";
 export default function Footer5({ parentClass = "footer style-4", nonHomepage = false }) {
   const [success, setSuccess] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
@@ -153,19 +151,26 @@ export default function Footer5({ parentClass = "footer style-4", nonHomepage = 
                     </div>
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
-                        {services.map((service, index) => (
-                          <li
-                            key={index}
-                            className="text-body-3 text_mono-gray-8"
-                          >
-                            <Link
-                              to={`/service-details/${service.id}`}
-                              className="link footer-menu_item"
-                            >
-                              {service.title}
-                            </Link>
-                          </li>
-                        ))}
+                        <li className="text-body-3 text_mono-gray-8">
+                          <Link to="/services" className="link footer-menu_item">
+                            Services
+                          </Link>
+                        </li>
+                        <li className="text-body-3 text_mono-gray-8">
+                          <Link to="/portfolio" className="link footer-menu_item">
+                            Case Study
+                          </Link>
+                        </li>
+                        <li className="text-body-3 text_mono-gray-8">
+                          <Link to="#" className="link footer-menu_item">
+                            Career
+                          </Link>
+                        </li>
+                        <li className="text-body-3 text_mono-gray-8">
+                          <Link to="/testimonials" className="link footer-menu_item">
+                            Testimonials
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
