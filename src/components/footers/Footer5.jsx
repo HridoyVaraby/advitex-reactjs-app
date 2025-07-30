@@ -206,19 +206,19 @@ export default function Footer5({ parentClass = "footer style-4", nonHomepage = 
                     <div className="tf-collapse-content">
                       <ul className="footer-menu-list">
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`#`} className="link footer-menu_item">
+                          <a href="https://wezappstech.com/" target="_blank" rel="noopener noreferrer" className="link footer-menu_item">
                             WezappsTech
-                          </Link>
+                          </a>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`#`} className="link footer-menu_item">
+                          <a href="https://thestationbd.com/" target="_blank" rel="noopener noreferrer" className="link footer-menu_item">
                             The Station
-                          </Link>
+                          </a>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to={`#`} className="link footer-menu_item">
+                          <a href="https://taxolutionbd.com/" target="_blank" rel="noopener noreferrer" className="link footer-menu_item">
                             Taxolution
-                          </Link>
+                          </a>
                         </li>
                       </ul>
                     </div>
