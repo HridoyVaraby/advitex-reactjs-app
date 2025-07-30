@@ -6,19 +6,25 @@ export default function OfficeLocations() {
     <div className="section-map tf-spacing-6 mt-5">
       <div className="tf-container">
         <div className="heading-seciton mb_83 text-center">
-          <h2 className="heading-title">Visit Our Office</h2>
+          <h2 className="title text_mono-dark-9 fw-5">Visit Our Office</h2>
         </div>
         {mapLocations.map((item, index) => (
-          <div key={index} className="row align-items-center">
+          <div key={index} className="row">
             {/* Left Column - Map */}
             <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
-              <div className="map-container" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <div className="map-container" style={{
+                borderRadius: '12px',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                marginRight: '10px',
+                height: '100%'
+              }}>
                 <iframe
                   className="map w-100"
                   src={item.src}
                   style={{
                     border: 0,
-                    height: '400px',
+                    height: '480px',
                     width: '100%'
                   }}
                   allowFullScreen=""
@@ -30,11 +36,16 @@ export default function OfficeLocations() {
 
             {/* Right Column - Information */}
             <div className="col-lg-6 col-md-6">
-              <div className="office-info ps-lg-5 p-4" style={{
+              <div className="office-info p-5" style={{
+                marginLeft: '10px',
                 border: '1px solid var(--Primary-1)',
                 borderRadius: '20px',
-                backgroundColor: 'var(--White)',
-                boxShadow: '0 5px 20px rgba(0,0,0,0.05)'
+                backgroundColor: '#f2ebfc',
+                boxShadow: '0 5px 20px rgba(0,0,0,0.05)',
+                height: '480px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
               }}>
                 <div className="mb-4">
                   <h3 className="text_primary mb-3 fw-6">Get In Touch</h3>
