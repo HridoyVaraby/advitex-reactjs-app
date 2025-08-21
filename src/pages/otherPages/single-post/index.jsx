@@ -3,20 +3,33 @@ import Header1 from "@/components/headers/Header1";
 import BlogDetails from "@/components/otherPages/BlogDetails";
 import React from "react";
 import { Link } from "react-router-dom";
-import { allBlogs } from "@/data/blogs";
+import { getBlogPostById } from "@/data/blogPosts";
 import { useParams } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
-const metadata = {
-  title:
-    "Single Post || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
-};
 
 export default function BlogDetailsPage1() {
   let params = useParams();
   const id = params.id;
 
-  const blog = allBlogs.filter((p) => p.id == id)[0] || allBlogs[0];
+  const blog = getBlogPostById(id);
+
+  if (!blog) {
+    return (
+      <div className="tf-container">
+        <div className="row">
+          <div className="col-12">
+            <h2>Blog post not found</h2>
+            <p>The requested blog post could not be found.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const metadata = {
+    title: `${blog.title} || Advitex - Finance and Business Consulting`,
+    description: blog.excerpt,
+  };
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -43,7 +56,7 @@ export default function BlogDetailsPage1() {
                       Home
                     </Link>
                   </li>
-                  <li>Single Post</li>
+                  <li>Blog</li>
                   <li>{blog.title}</li>
                 </ul>
               </div>

@@ -2,7 +2,7 @@ import React from "react";
 import BlogSidebar from "./BlogSidebar";
 import { Link } from "react-router-dom";
 
-import { blogArticles5 } from "@/data/blogs";
+import { allBlogPosts } from "@/data/blogPosts";
 export default function Blogs() {
   return (
     <div className="section-blog-grid tf-spacing-2">
@@ -10,7 +10,7 @@ export default function Blogs() {
         <div className="row">
           <div className="col-lg-8 left">
             <div className="tf-grid-layout md-col-2">
-              {blogArticles5.map((article) => (
+              {allBlogPosts.map((article) => (
                 <div key={article.id} className="blog-article-item hover-image">
                   <Link
                     to={`/single-post/${article.id}`}
@@ -18,11 +18,11 @@ export default function Blogs() {
                   >
                     <img
                       className="lazyload"
-                      data-src={article.imageSrc}
-                      alt={article.alt}
-                      src={article.imageSrc}
-                      width={article.width}
-                      height={article.height}
+                      data-src={article.featuredImage}
+                      alt={article.title}
+                      src={article.featuredImage}
+                      width={550}
+                      height={380}
                     />
                   </Link>
                   <div className="article-content">
@@ -41,6 +41,17 @@ export default function Blogs() {
                         {article.title}
                       </Link>
                     </h5>
+                    <p className="text-body-1 text_mono-gray-6 mt_10">
+                      {article.excerpt}
+                    </p>
+                    <div className="blog-meta mt_15 d-flex align-items-center gap_10">
+                      <span className="text-body-3 text_mono-gray-5">
+                        {article.readTime}
+                      </span>
+                      <span className="text-body-3 text_mono-gray-5">
+                        {article.comments} comment{article.comments !== 1 ? 's' : ''}
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}

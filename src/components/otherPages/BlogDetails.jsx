@@ -1,8 +1,28 @@
 import React from "react";
 import BlogSidebar from "./BlogSidebar";
-
 import BlogCommentBox from "./BlogCommentBox";
+import { useParams } from "react-router-dom";
+import { getBlogPostById } from "@/data/blogPosts";
+
 export default function BlogDetails() {
+  const { id } = useParams();
+  const blogPost = getBlogPostById(id);
+
+  if (!blogPost) {
+    return (
+      <div className="section-sigle-post tf-spacing-3">
+        <div className="tf-container">
+          <div className="row">
+            <div className="col-12">
+              <h2>Blog post not found</h2>
+              <p>The requested blog post could not be found.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="section-sigle-post tf-spacing-3">
       <div className="tf-container">
@@ -13,11 +33,11 @@ export default function BlogDetails() {
                 <ul className="blog-article-meta d-flex align-items-center mb_32">
                   <li className="meta-item text-body-1">
                     <a href="#" className="link-black">
-                      Design Trends
+                      {blogPost.category}
                     </a>
                   </li>
                   <li className="meta-item date text-body-1">
-                    August 23, 2024
+                    {blogPost.date}
                   </li>
                 </ul>
                 <div className="box-infor">
@@ -25,15 +45,15 @@ export default function BlogDetails() {
                     <div className="avatar">
                       <img
                         alt="avatar"
-                        src="/images/avatar/avatar-1.jpg"
+                        src={blogPost.author.avatar}
                         width={64}
                         height={64}
                       />
                     </div>
                     <div className="content">
-                      <div className="sub-heading text_mono-dark-9">Amoro</div>
+                      <div className="sub-heading text_mono-dark-9">{blogPost.author.name}</div>
                       <span className="text-body-3 text_mono-gray-5">
-                        Written by Editor
+                        {blogPost.author.role}
                       </span>
                     </div>
                   </div>
@@ -67,9 +87,9 @@ export default function BlogDetails() {
                 <div className="thumbs-post-single rounded-24 overflow-hidden mb_112">
                   <img
                     className="lazyload"
-                    data-src="/images/blog/single-post-1.jpg"
-                    alt="thumbs"
-                    src="/images/blog/single-post-1.jpg"
+                    data-src={blogPost.featuredImage}
+                    alt={blogPost.title}
+                    src={blogPost.featuredImage}
                     width={1147}
                     height={719}
                   />
@@ -79,160 +99,79 @@ export default function BlogDetails() {
                     Introduction
                   </h2>
                   <p className="text-body-1 mb_44 text_mono-gray-6">
-                    It’s not merely about In today's rapidly evolving digital
-                    landscape, businesses are faced with a myriad of challenges
-                    and opportunities. From staying ahead of technological
-                    advancements to understanding consumer behavior, the
-                    complexity of the modern business environment can be
-                    overwhelming. This is where business consulting comes in. By
-                    providing expert guidance and tailored strategies, business
-                    consultants can help companies navigate the digital maze and
-                    achieve their goals.
+                    {blogPost.content.introduction}
                   </p>
                 </div>
-                <div className="single-post-content mb_112">
-                  <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">
-                    The role of business consulting in the digital age
-                  </h2>
-                  <ul>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Digital Transformation:</span>{" "}
-                        Consultants can help businesses develop a comprehensive
-                        digital transformation strategy, identifying areas for
-                        improvement and implementing new technologies to
-                        streamline operations.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Data Analytics:</span> Leveraging
-                        advanced data analytics techniques, consultants can
-                        uncover valuable insights into customer behavior, market
-                        trends, and operational efficiency.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Cybersecurity:</span> In an
-                        increasingly interconnected world, cybersecurity is
-                        paramount. Consultants can assess a company's security
-                        posture and recommend measures to protect sensitive
-                        data.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Cloud Computing:</span>{" "}
-                        Transitioning to the cloud can offer numerous benefits,
-                        but it also requires careful planning and execution.
-                        Consultants can guide businesses through the cloud
-                        migration process.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">E-commerce:</span> For businesses
-                        looking to expand their online presence, consultants can
-                        provide expertise in e-commerce strategy, website
-                        development, and digital marketing.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div className="wrap-quote mb_96">
-                  <div className="rounded-24 overflow-hidden mb_29 thumbs-post-single-2">
-                    <img
-                      className="lazyload"
-                      data-src="/images/blog/single-post-2.jpg"
-                      alt="thumbs"
-                      src="/images/blog/single-post-2.jpg"
-                      width={1147}
-                      height={360}
-                    />
+
+                {/* Dynamic Content Sections */}
+                {blogPost.content.sections.map((section, index) => (
+                  <div key={index} className="single-post-content mb_112">
+                    <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">
+                      {section.title}
+                    </h2>
+                    <p className="text-body-1 mb_44 text_mono-gray-6">
+                      {section.content}
+                    </p>
+                    {section.list && (
+                      <ul>
+                        {section.list.map((item, itemIndex) => (
+                          <li key={itemIndex}>
+                            <p className="text-body-1 text_mono-gray-6">
+                              {item.includes(':') ? (
+                                <>
+                                  <span className="h6">{item.split(':')[0]}:</span>
+                                  {item.split(':')[1]}
+                                </>
+                              ) : (
+                                item
+                              )}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
+                ))}
+
+                {/* Quote Section - Optional */}
+                <div className="wrap-quote mb_96">
                   <div className="quote style-2">
                     <p className="h2 text">
                       " Ready to take your business to the next level? Contact
-                      us today for a free consultation. ”
+                      us today for a free consultation. "
                     </p>
                   </div>
                 </div>
-                <div className="single-post-content mb_40">
-                  <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">
-                    Key Benefits of Working with a Business <br />
-                    Consultant
-                  </h2>
-                  <ul>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Objectivity:</span> Consultants
-                        bring an unbiased perspective to your business, allowing
-                        them to identify opportunities and challenges that may
-                        be overlooked by internal teams.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Expertise:</span> Consultants
-                        possess a deep understanding of industry best practices
-                        and emerging trends, enabling them to provide tailored
-                        recommendations.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Efficiency:</span> By leveraging
-                        their knowledge and experience, consultants can help
-                        businesses achieve their goals more quickly and
-                        efficiently.
-                      </p>
-                    </li>
-                    <li>
-                      <p className="text-body-1 text_mono-gray-6">
-                        <span className="h6">Cost-Effectiveness:</span> While
-                        consulting services can involve an upfront investment,
-                        the long-term benefits often outweigh the costs.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+
+                {/* Conclusion */}
                 <div className="single-post-content mb_90">
                   <h2 className="text_mono-dark-9 mb_43 title-sigle-post">
                     Conclusion
                   </h2>
                   <p className="text-body-1 text_mono-gray-6">
-                    In conclusion, business consulting can be a valuable asset
-                    for companies seeking to thrive in the digital age. By
-                    providing <br />
-                    expert guidance and tailored strategies, consultants can
-                    help businesses overcome challenges, seize opportunities,
-                    and <br />
-                    achieve long-term success.
+                    {blogPost.content.conclusion}
                   </p>
                 </div>
+
+                {/* Tags and Likes */}
                 <div className="wrap-tag d-flex justify-content-between align-items-center flex-wrap gap-24">
                   <div className="wrap-popular-tag">
-                    <a href="#" className="popular-tag-item">
-                      {" "}
-                      Consulting{" "}
-                    </a>
-                    <a href="#" className="popular-tag-item">
-                      {" "}
-                      Business{" "}
-                    </a>
-                    <a href="#" className="popular-tag-item">
-                      Business Consulting
-                    </a>
+                    {blogPost.tags.map((tag, index) => (
+                      <a key={index} href="#" className="popular-tag-item">
+                        {tag}
+                      </a>
+                    ))}
                   </div>
                   <div className="wishlist-post-sigle d-flex align-items-center gap-16">
                     <i className="icon-heart-solid" />
-                    <span className="text-body-1">13 Like</span>
+                    <span className="text-body-1">{blogPost.likes} Like{blogPost.likes !== 1 ? 's' : ''}</span>
                   </div>
                 </div>
+
+                {/* Comments Section */}
                 <div className="reply-comment style-2">
                   <div className="reply-comment-heading mb_82">
-                    <h2>3 Comments</h2>
+                    <h2>{blogPost.comments} Comment{blogPost.comments !== 1 ? 's' : ''}</h2>
                   </div>
                   <div className="wrap-comment">
                     <div className="reply-comment-wrap">
