@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 
-import { relatedPosts } from "@/data/blogs";
+import { blogPostsMetadata } from "@/data/blogPostsSimple";
+
 export default function BlogSidebar() {
+  // Get recent posts (latest 4 posts)
+  const recentPosts = useMemo(() => {
+    return [...blogPostsMetadata]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 4);
+  }, []);
+
+  // Get categories with post counts
+  const categories = useMemo(() => {
+    const categoryCount = {};
+    blogPostsMetadata.forEach(post => {
+      categoryCount[post.category] = (categoryCount[post.category] || 0) + 1;
+    });
+    return Object.entries(categoryCount).map(([name, count]) => ({ name, count }));
+  }, []);
+
+  // Get popular tags
+  const popularTags = useMemo(() => {
+    const tagCount = {};
+    blogPostsMetadata.forEach(post => {
+      post.tags.forEach(tag => {
+        tagCount[tag] = (tagCount[tag] || 0) + 1;
+      });
+    });
+    return Object.entries(tagCount)
+      .sort(([,a], [,b]) => b - a)
+      .slice(0, 8)
+      .map(([tag]) => tag);
+  }, []);
   return (
     <div className="sidebar">
       <div>
@@ -30,17 +60,17 @@ export default function BlogSidebar() {
       </div>
       <div>
         <h6 className="sidebar-title mb_13">Recent posts</h6>
-        {relatedPosts.map((post) => (
+        {recentPosts.map((post) => (
           <div
             key={post.id}
             className="relatest-post-item style-default hover-image-2"
           >
             <Link to={`/single-post/${post.id}`} className="image-rotate image">
               <img
-                alt=""
-                src={post.imageSrc}
-                width={post.width}
-                height={post.height}
+                alt={post.title}
+                src={post.featuredImage}
+                width={120}
+                height={120}
               />
             </Link>
             <div className="content">
@@ -51,9 +81,9 @@ export default function BlogSidebar() {
               </div>
               <ul className="blog-article-meta d-flex align-items-center">
                 <li className="meta-item text-body-3">
-                  <a href="#" className="link-black">
+                  <span className="link-black">
                     {post.category}
-                  </a>
+                  </span>
                 </li>
                 <li className="meta-item date text-body-3">{post.date}</li>
               </ul>
@@ -64,97 +94,25 @@ export default function BlogSidebar() {
       <div>
         <h6 className="sidebar-title mb_18">Category</h6>
         <div className="sidebar-categories">
-          <div className="item">
-            <a href="#" className="text-body-1 text_mono-gray-6">
-              Business Consulting
-            </a>
-            <span className="text-body-3 text_mono-gray-6">4</span>
-          </div>
-          <div className="item">
-            <a href="#" className="text-body-1 text_mono-gray-6">
-              Corporate
-            </a>
-            <span className="text-body-3 text_mono-gray-6">6</span>
-          </div>
-          <div className="item">
-            <a href="#" className="text-body-1 text_mono-gray-6">
-              IT Solutions
-            </a>
-            <span className="text-body-3 text_mono-gray-6">2</span>
-          </div>
-          <div className="item">
-            <a href="#" className="text-body-1 text_mono-gray-6">
-              Marketing
-            </a>
-            <span className="text-body-3 text_mono-gray-6">8</span>
-          </div>
-          <div className="item">
-            <a href="#" className="text-body-1 text_mono-gray-6">
-              Startup Consulting
-            </a>
-            <span className="text-body-3 text_mono-gray-6">5</span>
-          </div>
+          {categories.map((category) => (
+            <div key={category.name} className="item">
+              <a href="#" className="text-body-1 text_mono-gray-6">
+                {category.name}
+              </a>
+              <span className="text-body-3 text_mono-gray-6">{category.count}</span>
+            </div>
+          ))}
         </div>
       </div>
       <div>
         <h6 className="sidebar-title mb_18 -mt_7">Popular tag</h6>
         <div className="wrap-popular-tag">
-          <a href="#" className="popular-tag-item link">
-            {" "}
-            Analysis{" "}
-          </a>
-          <a href="#" className="popular-tag-item link">
-            {" "}
-            Consulting{" "}
-          </a>
-          <a href="#" className="popular-tag-item link">
-            {" "}
-            Business{" "}
-          </a>
-          <a href="#" className="popular-tag-item link">
-            {" "}
-            Data{" "}
-          </a>
-          <a href="#" className="popular-tag-item link">
-            Business Consulting
-          </a>
-          <a href="#" className="popular-tag-item link">
-            {" "}
-            Marketing{" "}
-          </a>
-          <a href="#" className="popular-tag-item link">
-            {" "}
-            Solutions{" "}
-          </a>
+          {popularTags.map((tag) => (
+            <a href="#" key={tag} className="popular-tag-item link">
+              {tag}
+            </a>
+          ))}
         </div>
-      </div>
-      <div>
-        <h6 className="sidebar-title mb_16">Subscribe newsletter</h6>
-        <form className="form-newsletter" onSubmit={(e) => e.preventDefault()}>
-          <p className="text-body-2 mb_14">
-            Sign up to receive notifications about the latest news and events
-            from us!
-          </p>
-          <div>
-            <fieldset className="mb_14">
-              <input
-                type="email"
-                className="tb-my-input style-2"
-                name="email"
-                placeholder="Enter text"
-                required
-              />
-            </fieldset>
-          </div>
-          <button
-            name="submit"
-            type="submit"
-            className="tf-btn w-full btn-submit-comment btn-primary2"
-          >
-            <span>Subcribe</span>
-            <span className="bg-effect" />
-          </button>
-        </form>
       </div>
     </div>
   );

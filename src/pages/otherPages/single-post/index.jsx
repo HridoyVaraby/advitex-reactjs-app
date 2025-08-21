@@ -1,10 +1,10 @@
 import Footer5 from "@/components/footers/Footer5";
 import Header5 from "@/components/headers/Header5";
-import BlogDetails from "@/components/otherPages/BlogDetails";
+import BlogDetailsMarkdown from "@/components/otherPages/BlogDetailsMarkdown";
 import Contact from "@/components/common/Contact";
 import React from "react";
 import { Link } from "react-router-dom";
-import { getBlogPostById } from "@/data/blogPosts";
+import { getBlogPostMetadataById } from "@/data/blogPostsSimple";
 import { useParams } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
 
@@ -12,7 +12,7 @@ export default function BlogDetailsPage1() {
   let params = useParams();
   const id = params.id;
 
-  const blog = getBlogPostById(id);
+  const blog = getBlogPostMetadataById(id);
 
   if (!blog) {
     return (
@@ -70,7 +70,7 @@ export default function BlogDetailsPage1() {
         </div>
       </div>
       <div className="main-content style-1">
-        <BlogDetails />
+        <BlogDetailsMarkdown />
       </div>
       <Contact />
       <Footer5 nonHomepage={true} />
