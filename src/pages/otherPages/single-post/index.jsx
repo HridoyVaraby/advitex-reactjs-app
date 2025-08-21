@@ -1,6 +1,7 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 import BlogDetails from "@/components/otherPages/BlogDetails";
+import Contact from "@/components/common/Contact";
 import React from "react";
 import { Link } from "react-router-dom";
 import { getBlogPostById } from "@/data/blogPosts";
@@ -34,12 +35,12 @@ export default function BlogDetailsPage1() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
-        <div className="page-title style-default v2">
+        <Header5 />
+        <div className="page-title style-default v6">
           <div className="tf-container">
             <div className="row">
               <div className="col-12">
-                <div className="heading mb_53">
+                <div className="heading mb_51">
                   <h1 className="text_black mb_25 letter-spacing-1">
                     {blog.title}
                   </h1>
@@ -56,7 +57,11 @@ export default function BlogDetailsPage1() {
                       Home
                     </Link>
                   </li>
-                  <li>Blog</li>
+                  <li>
+                    <Link to={`/blog`} className="link">
+                      Blog
+                    </Link>
+                  </li>
                   <li>{blog.title}</li>
                 </ul>
               </div>
@@ -67,7 +72,8 @@ export default function BlogDetailsPage1() {
       <div className="main-content style-1">
         <BlogDetails />
       </div>
-      <Footer1 parentClass="footer style-default has-border-top" nonHomepage={true} />
+      <Contact />
+      <Footer5 nonHomepage={true} />
     </>
   );
 }
