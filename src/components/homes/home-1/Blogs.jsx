@@ -1,10 +1,17 @@
-import { blogArticles } from "@/data/blogs";
-import React from "react";
+import { blogPostsMetadata } from "@/data/blogPostsSimple";
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
 import { Navigation } from "swiper/modules";
+
 export default function Blogs() {
+  // Get the latest 6 blog posts for the home page
+  const latestPosts = useMemo(() => {
+    return [...blogPostsMetadata]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 6);
+  }, []);
   return (
     <div className="section-blog style-3 sw-layout-1 tf-spacing-17">
       <div className="tf-container">
@@ -56,7 +63,7 @@ export default function Blogs() {
               nextEl: ".snbn5",
             }}
           >
-            {blogArticles.map((article) => (
+            {latestPosts.map((article) => (
               <SwiperSlide className="swiper-slide" key={article.id}>
                 <div className="blog-article-item hover-image">
                   <Link
@@ -65,11 +72,11 @@ export default function Blogs() {
                   >
                     <img
                       className="lazyload"
-                      data-src={article.imageSrc}
-                      alt="blog"
-                      src={article.imageSrc}
-                      width={article.width}
-                      height={article.height}
+                      data-src={article.featuredImage}
+                      alt={article.title}
+                      src={article.featuredImage}
+                      width={550}
+                      height={380}
                     />
                   </Link>
                   <div className="article-content">
@@ -91,6 +98,17 @@ export default function Blogs() {
                         {article.title}
                       </Link>
                     </h5>
+                    <p className="text-body-2 text_mono-gray-6 mt_10">
+                      {article.excerpt}
+                    </p>
+                    <div className="blog-meta mt_15 d-flex align-items-center gap_10">
+                      <span className="text-body-3 text_mono-gray-5">
+                        {article.readTime}
+                      </span>
+                      <span className="text-body-3 text_mono-gray-5">
+                        {article.likes} like{article.likes !== 1 ? 's' : ''}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

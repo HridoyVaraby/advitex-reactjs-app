@@ -1,10 +1,16 @@
-import { blogArticles3 } from "@/data/blogs";
-import React from "react";
+import { blogPostsMetadata } from "@/data/blogPostsSimple";
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 export default function Blogs2() {
+  // Get the latest 6 blog posts for the marketing consulting page
+  const latestPosts = useMemo(() => {
+    return [...blogPostsMetadata]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 6);
+  }, []);
   return (
     <div className="section-blog style-1 sw-layout-1 tf-spacing-44">
       <div className="tf-container-2">
@@ -98,7 +104,7 @@ export default function Blogs2() {
           }}
           spaceBetween={15}
         >
-          {blogArticles3.map((article) => (
+          {latestPosts.map((article) => (
             <SwiperSlide
               className="swiper-slide"
               key={`blog-article-${article.id}`}
@@ -110,19 +116,19 @@ export default function Blogs2() {
                 >
                   <img
                     className="lazyload"
-                    data-src={article.imageSrc}
-                    alt="blog"
-                    src={article.imageSrc}
-                    width={article.width}
-                    height={article.height}
+                    data-src={article.featuredImage}
+                    alt={article.title}
+                    src={article.featuredImage}
+                    width={550}
+                    height={380}
                   />
                   <img
                     className="lazyload"
-                    data-src={article.imageSrc}
-                    alt="blog"
-                    src={article.imageSrc}
-                    width={article.width}
-                    height={article.height}
+                    data-src={article.featuredImage}
+                    alt={article.title}
+                    src={article.featuredImage}
+                    width={550}
+                    height={380}
                   />
                 </Link>
                 <div className="article-content">

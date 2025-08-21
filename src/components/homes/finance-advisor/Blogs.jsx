@@ -1,7 +1,21 @@
 import { Link } from "react-router-dom";
+import { useMemo } from "react";
 
-import { blogArticles4, posts } from "@/data/blogs";
+import { blogPostsMetadata } from "@/data/blogPostsSimple";
+
 export default function Blogs() {
+  // Get the latest posts for the finance advisor page
+  const latestPosts = useMemo(() => {
+    return [...blogPostsMetadata]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 3);
+  }, []);
+
+  const recentPosts = useMemo(() => {
+    return [...blogPostsMetadata]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(3, 6);
+  }, []);
   return (
     <div className="section-blog style-2 tf-spacing-23">
       <div className="tf-container-2">
@@ -15,18 +29,18 @@ export default function Blogs() {
           </h2>
         </div>
         <div className="wrapper">
-          {blogArticles4.map((article) => (
+          {latestPosts.map((article, index) => (
             <div
               key={article.id}
               className="blog-article-item style-2 hover-image wow animate__fadeInLeft animate__animated"
-              data-wow-delay={article.delay}
+              data-wow-delay={`${index * 0.1}s`}
             >
               <Link to={`/single-post/${article.id}`} className="article-thumb">
                 <img
                   className="lazyload"
-                  data-src={article.imageSrc}
-                  alt={article.alt}
-                  src={article.imageSrc}
+                  data-src={article.featuredImage}
+                  alt={article.title}
+                  src={article.featuredImage}
                   width={621}
                   height={621}
                 />
@@ -45,19 +59,19 @@ export default function Blogs() {
             </div>
           ))}
           <div className="right">
-            {posts.map((post) => (
+            {recentPosts.map((post, index) => (
               <div
                 key={post.id}
                 className="relatest-post-item style-1 hover-image-2 wow animate__fadeInRight animate__animated"
-                data-wow-delay={post.delay}
+                data-wow-delay={`${index * 0.1}s`}
               >
                 <Link
                   to={`/single-post/${post.id}`}
                   className="image-rotate image mt-0"
                 >
                   <img
-                    alt={post.alt}
-                    src={post.imageSrc}
+                    alt={post.title}
+                    src={post.featuredImage}
                     width={120}
                     height={120}
                   />
