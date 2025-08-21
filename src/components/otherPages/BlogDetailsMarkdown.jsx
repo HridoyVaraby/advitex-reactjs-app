@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import BlogSidebar from "./BlogSidebar";
-import BlogCommentBox from "./BlogCommentBox";
 import { useParams } from "react-router-dom";
 import { getBlogPostMetadataById } from "@/data/blogPostsSimple";
 
@@ -130,25 +129,25 @@ export default function BlogDetailsMarkdown() {
                     height={719}
                   />
                 </div>
-                
+
                 {/* Markdown Content */}
                 <div className="markdown-content mb_90">
-                  <ReactMarkdown 
+                  <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     components={{
-                      h1: ({children}) => <h2 className="text_mono-dark-9 mb_43 title-sigle-post">{children}</h2>,
-                      h2: ({children}) => <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">{children}</h2>,
-                      h3: ({children}) => <h3 className="mb_11 text_mono-dark-9 mb_25">{children}</h3>,
-                      p: ({children}) => <p className="text-body-1 mb_44 text_mono-gray-6">{children}</p>,
-                      ul: ({children}) => <ul className="mb_44">{children}</ul>,
-                      ol: ({children}) => <ol className="mb_44">{children}</ol>,
-                      li: ({children}) => (
+                      h1: ({ children }) => <h2 className="text_mono-dark-9 mb_43 title-sigle-post">{children}</h2>,
+                      h2: ({ children }) => <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">{children}</h2>,
+                      h3: ({ children }) => <h3 className="mb_11 text_mono-dark-9 mb_25">{children}</h3>,
+                      p: ({ children }) => <p className="text-body-1 mb_44 text_mono-gray-6">{children}</p>,
+                      ul: ({ children }) => <ul className="mb_44">{children}</ul>,
+                      ol: ({ children }) => <ol className="mb_44">{children}</ol>,
+                      li: ({ children }) => (
                         <li>
                           <p className="text-body-1 text_mono-gray-6">{children}</p>
                         </li>
                       ),
-                      strong: ({children}) => <span className="h6">{children}</span>,
-                      blockquote: ({children}) => (
+                      strong: ({ children }) => <span className="h6">{children}</span>,
+                      blockquote: ({ children }) => (
                         <div className="wrap-quote mb_96">
                           <div className="quote style-2">
                             <p className="h2 text">{children}</p>
@@ -176,80 +175,7 @@ export default function BlogDetailsMarkdown() {
                   </div>
                 </div>
 
-                {/* Comments Section */}
-                <div className="reply-comment style-2">
-                  <div className="reply-comment-heading mb_82">
-                    <h2>{blogPost.comments} Comment{blogPost.comments !== 1 ? 's' : ''}</h2>
-                  </div>
-                  <div className="wrap-comment">
-                    <div className="reply-comment-wrap">
-                      <div className="reply-comment-item">
-                        <div className="heading mb_15">
-                          <div className="box-user">
-                            <div className="avatar">
-                              <img
-                                alt="avatar"
-                                src="/images/avatar/avatar-2.jpg"
-                                width={119}
-                                height={119}
-                              />
-                            </div>
-                            <div className="content">
-                              <h5>Kobbie Dao</h5>
-                              <p className="text-body-1 text_mono-gray-5">
-                                September 30, 2023 / 9:30 AM
-                              </p>
-                            </div>
-                          </div>
-                          <a href="#" className="tf-btn btn-primary2">
-                            <span>Reply</span>
-                            <span className="bg-effect" />
-                          </a>
-                        </div>
-                        <div className="comment text-body-1 text_black">
-                          Great insights! This really helped me understand the importance of professional consulting for business growth.
-                        </div>
-                      </div>
-                      <div className="reply-comment-item type-reply">
-                        <div className="heading mb_35">
-                          <div className="box-user">
-                            <div className="avatar">
-                              <img
-                                alt="avatar"
-                                src="/images/avatar/avatar-3.jpg"
-                                width={119}
-                                height={119}
-                              />
-                            </div>
-                            <div className="content">
-                              <h5 className="text_black">Sarah M.</h5>
-                              <p className="text-body-1 text_mono-gray-5">
-                                October 2, 2023 / 2:15 PM
-                              </p>
-                            </div>
-                          </div>
-                          <a href="#" className="tf-btn btn-primary2">
-                            <span>Reply</span>
-                            <span className="bg-effect" />
-                          </a>
-                        </div>
-                        <div className="comment text-body-1 text_black">
-                          I completely agree! We've seen amazing results since working with consultants.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="leave-comment">
-                    <div className="heading-title mb_56">
-                      <h2 className="mb_18">Leave a Reply</h2>
-                      <p className="text-body-1 text_mono-gray letter-spacing-1">
-                        Your email address will not be published. Require field
-                        are marked <span>*</span>
-                      </p>
-                    </div>
-                    <BlogCommentBox />
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>

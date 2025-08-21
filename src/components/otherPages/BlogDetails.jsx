@@ -1,6 +1,5 @@
 import React from "react";
 import BlogSidebar from "./BlogSidebar";
-import BlogCommentBox from "./BlogCommentBox";
 import { useParams } from "react-router-dom";
 import { getBlogPostById } from "@/data/blogPosts";
 
@@ -168,115 +167,7 @@ export default function BlogDetails() {
                   </div>
                 </div>
 
-                {/* Comments Section */}
-                <div className="reply-comment style-2">
-                  <div className="reply-comment-heading mb_82">
-                    <h2>{blogPost.comments} Comment{blogPost.comments !== 1 ? 's' : ''}</h2>
-                  </div>
-                  <div className="wrap-comment">
-                    <div className="reply-comment-wrap">
-                      <div className="reply-comment-item">
-                        <div className="heading mb_15">
-                          <div className="box-user">
-                            <div className="avatar">
-                              <img
-                                alt="avatar"
-                                src="/images/avatar/avatar-2.jpg"
-                                width={119}
-                                height={119}
-                              />
-                            </div>
-                            <div className="content">
-                              <h5>Kobbie Dao</h5>
-                              <p className="text-body-1 text_mono-gray-5">
-                                September 30, 2023 / 9:30 AM
-                              </p>
-                            </div>
-                          </div>
-                          <a href="#" className="tf-btn btn-primary2">
-                            <span>Reply</span>
-                            <span className="bg-effect" />
-                          </a>
-                        </div>
-                        <div className="comment text-body-1 text_black">
-                          As a web designer myself, I couldn't agree more with
-                          the sentiment that great design should be felt and
-                          remembered long after the screen is turned off.
-                        </div>
-                      </div>
-                      <div className="reply-comment-item type-reply">
-                        <div className="heading mb_35">
-                          <div className="box-user">
-                            <div className="avatar">
-                              <img
-                                alt="avatar"
-                                src="/images/avatar/avatar-3.jpg"
-                                width={119}
-                                height={119}
-                              />
-                            </div>
-                            <div className="content">
-                              <h5 className="text_black">Zalatan</h5>
-                              <p className="text-body-1 text_mono-gray-5">
-                                September 30, 2023 / 9:30 AM
-                              </p>
-                            </div>
-                          </div>
-                          <a href="#" className="tf-btn btn-primary2">
-                            <span>Reply</span>
-                            <span className="bg-effect" />
-                          </a>
-                        </div>
-                        <div className="comment text-body-1 text_black">
-                          Aute mi ut suspendisse velit leo, vel risus ac. Amet
-                          dui dignissim fermentum malesuada auctor volutpat,
-                          vestibulum ipsum nulla.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="reply-comment-wrap">
-                      <div className="reply-comment-item">
-                        <div className="heading mb_15">
-                          <div className="box-user">
-                            <div className="avatar">
-                              <img
-                                alt="avatar"
-                                src="/images/avatar/avatar-4.jpg"
-                                width={119}
-                                height={119}
-                              />
-                            </div>
-                            <div className="content">
-                              <h5 className="text_black">Bellingham</h5>
-                              <p className="text-body-1 text_mono-gray-5">
-                                September 30, 2023 / 9:30 AM
-                              </p>
-                            </div>
-                          </div>
-                          <a href="#" className="tf-btn btn-primary2">
-                            <span>Reply</span>
-                            <span className="bg-effect" />
-                          </a>
-                        </div>
-                        <div className="comment text-body-1 text_black">
-                          Aute mi ut suspendisse velit leo, vel risus ac. Amet
-                          dui dignissim fermentum malesuada auctor volutpat,
-                          vestibulum ipsum nulla.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="leave-comment">
-                    <div className="heading-title mb_56">
-                      <h2 className="mb_18">Leave a Reply</h2>
-                      <p className="text-body-1 text_mono-gray letter-spacing-1">
-                        Your email address will not be published. Require field
-                        are marked <span>*</span>
-                      </p>
-                    </div>
-                    <BlogCommentBox />
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>

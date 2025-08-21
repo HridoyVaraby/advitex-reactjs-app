@@ -256,7 +256,7 @@ export default function Blogs() {
                         {article.readTime}
                       </span>
                       <span className="text-body-3 text_mono-gray-5">
-                        {article.comments} comment{article.comments !== 1 ? 's' : ''}
+                        {article.likes} like{article.likes !== 1 ? 's' : ''}
                       </span>
                     </div>
                   </div>
