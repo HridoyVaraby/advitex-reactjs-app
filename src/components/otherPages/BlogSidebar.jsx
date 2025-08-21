@@ -1,9 +1,17 @@
-import React, { useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 
 import { blogPostsMetadata } from "@/data/blogPostsSimple";
 
-export default function BlogSidebar() {
+export default function BlogSidebar({ 
+  onSearch, 
+  onCategoryFilter, 
+  onTagFilter, 
+  searchQuery, 
+  selectedCategory, 
+  selectedTag 
+}) {
+  const [searchInput, setSearchInput] = useState(searchQuery || "");
   // Get recent posts (latest 4 posts)
   const recentPosts = useMemo(() => {
     return [...blogPostsMetadata]
@@ -33,24 +41,59 @@ export default function BlogSidebar() {
       .slice(0, 8)
       .map(([tag]) => tag);
   }, []);
+
+  // Handle search form submission
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (onSearch) {
+      onSearch(searchInput.trim());
+    }
+  };
+
+  // Handle search input change
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  // Handle category click
+  const handleCategoryClick = (e, categoryName) => {
+    e.preventDefault();
+    if (onCategoryFilter) {
+      onCategoryFilter(categoryName);
+    }
+  };
+
+  // Handle tag click
+  const handleTagClick = (e, tagName) => {
+    e.preventDefault();
+    if (onTagFilter) {
+      onTagFilter(tagName);
+    }
+  };
+
+  // Update search input when searchQuery prop changes
+  React.useEffect(() => {
+    setSearchInput(searchQuery || "");
+  }, [searchQuery]);
+
   return (
     <div className="sidebar">
       <div>
         <h6 className="sidebar-title mb_21">Search</h6>
         <form
           className="form-search style-2"
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSearchSubmit}
         >
           <fieldset className="text">
             <input
               type="text"
-              placeholder="Search"
+              placeholder="Search posts..."
               className="style-2"
               name="search"
               tabIndex={0}
-              defaultValue=""
+              value={searchInput}
+              onChange={handleSearchChange}
               aria-required="true"
-              required
             />
           </fieldset>
           <button className="" type="submit">
@@ -96,7 +139,12 @@ export default function BlogSidebar() {
         <div className="sidebar-categories">
           {categories.map((category) => (
             <div key={category.name} className="item">
-              <a href="#" className="text-body-1 text_mono-gray-6">
+              <a 
+                href="#" 
+                className={`text-body-1 ${selectedCategory === category.name ? 'text-primary' : 'text_mono-gray-6'}`}
+                onClick={(e) => handleCategoryClick(e, category.name)}
+                style={selectedCategory === category.name ? { fontWeight: 'bold' } : {}}
+              >
                 {category.name}
               </a>
               <span className="text-body-3 text_mono-gray-6">{category.count}</span>
@@ -108,7 +156,17 @@ export default function BlogSidebar() {
         <h6 className="sidebar-title mb_18 -mt_7">Popular tag</h6>
         <div className="wrap-popular-tag">
           {popularTags.map((tag) => (
-            <a href="#" key={tag} className="popular-tag-item link">
+            <a 
+              href="#" 
+              key={tag} 
+              className={`popular-tag-item link ${selectedTag === tag ? 'active' : ''}`}
+              onClick={(e) => handleTagClick(e, tag)}
+              style={selectedTag === tag ? { 
+                backgroundColor: 'var(--Primary)', 
+                color: 'white',
+                borderColor: 'var(--Primary)'
+              } : {}}
+            >
               {tag}
             </a>
           ))}
