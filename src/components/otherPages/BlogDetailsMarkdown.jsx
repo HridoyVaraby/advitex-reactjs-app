@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import BlogSidebar from "./BlogSidebar";
 import { useParams } from "react-router-dom";
-import { getBlogPostById } from "@/data/blogPosts";
+import { getBlogPostMetadataById } from "@/data/blogPostsSimple";
 
-export default function BlogDetails() {
+export default function BlogDetailsMarkdown() {
   const { id } = useParams();
-  const blogPost = getBlogPostById(id);
+  const [markdownContent, setMarkdownContent] = useState('');
+  const [loading, setLoading] = useState(true);
+  const blogPost = getBlogPostMetadataById(id);
+
+  useEffect(() => {
+    if (blogPost?.contentFile) {
+      fetch(blogPost.contentFile)
+        .then(response => response.text())
+        .then(content => {
+          setMarkdownContent(content);
+          setLoading(false);
+        })
+        .catch(error => {
+          console.error('Error loading markdown content:', error);
+          setMarkdownContent('# Error\n\nCould not load blog content.');
+          setLoading(false);
+        });
+    } else {
+      setLoading(false);
+    }
+  }, [blogPost]);
 
   if (!blogPost) {
     return (
@@ -15,6 +37,20 @@ export default function BlogDetails() {
             <div className="col-12">
               <h2>Blog post not found</h2>
               <p>The requested blog post could not be found.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (loading) {
+    return (
+      <div className="section-sigle-post tf-spacing-3">
+        <div className="tf-container">
+          <div className="row">
+            <div className="col-12">
+              <p>Loading blog content...</p>
             </div>
           </div>
         </div>
@@ -93,63 +129,35 @@ export default function BlogDetails() {
                     height={719}
                   />
                 </div>
-                <div className="single-post-content mb_102">
-                  <h2 className="text_mono-dark-9 mb_43 title-sigle-post">
-                    Introduction
-                  </h2>
-                  <p className="text-body-1 mb_44 text_mono-gray-6">
-                    {blogPost.content.introduction}
-                  </p>
-                </div>
 
-                {/* Dynamic Content Sections */}
-                {blogPost.content.sections.map((section, index) => (
-                  <div key={index} className="single-post-content mb_112">
-                    <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">
-                      {section.title}
-                    </h2>
-                    <p className="text-body-1 mb_44 text_mono-gray-6">
-                      {section.content}
-                    </p>
-                    {section.list && (
-                      <ul>
-                        {section.list.map((item, itemIndex) => (
-                          <li key={itemIndex}>
-                            <p className="text-body-1 text_mono-gray-6">
-                              {item.includes(':') ? (
-                                <>
-                                  <span className="h6">{item.split(':')[0]}:</span>
-                                  {item.split(':')[1]}
-                                </>
-                              ) : (
-                                item
-                              )}
-                            </p>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-
-                {/* Quote Section - Optional */}
-                <div className="wrap-quote mb_96">
-                  <div className="quote style-2">
-                    <p className="h2 text">
-                      " Ready to take your business to the next level? Contact
-                      us today for a free consultation. "
-                    </p>
-                  </div>
-                </div>
-
-                {/* Conclusion */}
-                <div className="single-post-content mb_90">
-                  <h2 className="text_mono-dark-9 mb_43 title-sigle-post">
-                    Conclusion
-                  </h2>
-                  <p className="text-body-1 text_mono-gray-6">
-                    {blogPost.content.conclusion}
-                  </p>
+                {/* Markdown Content */}
+                <div className="markdown-content mb_90">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      h1: ({ children }) => <h2 className="text_mono-dark-9 mb_43 title-sigle-post">{children}</h2>,
+                      h2: ({ children }) => <h2 className="mb_11 text_mono-dark-9 title-sigle-post mb_43">{children}</h2>,
+                      h3: ({ children }) => <h3 className="mb_11 text_mono-dark-9 mb_25">{children}</h3>,
+                      p: ({ children }) => <p className="text-body-1 mb_44 text_mono-gray-6">{children}</p>,
+                      ul: ({ children }) => <ul className="mb_44">{children}</ul>,
+                      ol: ({ children }) => <ol className="mb_44">{children}</ol>,
+                      li: ({ children }) => (
+                        <li>
+                          <p className="text-body-1 text_mono-gray-6">{children}</p>
+                        </li>
+                      ),
+                      strong: ({ children }) => <span className="h6">{children}</span>,
+                      blockquote: ({ children }) => (
+                        <div className="wrap-quote mb_96">
+                          <div className="quote style-2">
+                            <p className="h2 text">{children}</p>
+                          </div>
+                        </div>
+                      )
+                    }}
+                  >
+                    {markdownContent}
+                  </ReactMarkdown>
                 </div>
 
                 {/* Tags and Likes */}

@@ -74,7 +74,7 @@ export const services2 = [
     description:
       "Build a standout identity with our custom brand development and positioning services—designed to define your essence and communicate your value clearly.",
     icon: "/images/box-icon/medical-circle.svg",
-    bgColor: "bg-color-yellow",
+    bgColor: "bg-color-blue",
     delay: "0s",
   },
   {
@@ -83,7 +83,7 @@ export const services2 = [
     description:
       "Unlock your brand’s full potential with data-backed digital strategies that drive reach, engagement, and conversions.",
     icon: "/images/box-icon/coins-stacked.svg",
-    bgColor: "bg-color-green",
+    bgColor: "bg-color-purple",
     delay: ".2s",
   },
   {
@@ -92,7 +92,7 @@ export const services2 = [
     description:
       "Discover what drives your market. Our in-depth research & content development help to connect with your core audience, competitor moves, and emerging trends.",
     icon: "/images/box-icon/building-07.svg",
-    bgColor: "bg-color-red",
+    bgColor: "bg-color-orange",
     delay: ".3s",
   },
   {
@@ -101,7 +101,7 @@ export const services2 = [
     description:
       "Managing and growing your brand presence across social channels with targeted campaigns.",
     icon: "/images/box-icon/bullhorn.svg",
-    bgColor: "bg-color-blue",
+    bgColor: "bg-color-yellow",
     delay: ".4s",
   },
   {
@@ -110,7 +110,7 @@ export const services2 = [
     description:
       "Creating responsive, user-friendly websites and landing pages that showcase your brand and drive conversions.",
     icon: "/images/box-icon/website.svg",
-    bgColor: "bg-color-purple",
+    bgColor: "bg-color-green",
     delay: ".5s",
   },
   {
@@ -119,7 +119,7 @@ export const services2 = [
     description:
       "Providing valuable market analysis to inform effective branding and marketing decisions.",
     icon: "/images/box-icon/search.svg",
-    bgColor: "bg-color-orange",
+    bgColor: "bg-color-red",
     delay: ".6s",
   },
 ];

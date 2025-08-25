@@ -4,6 +4,7 @@ import "odometer/themes/odometer-theme-default.css"; // Import theme
 import "rc-slider/assets/index.css";
 import "photoswipe/dist/photoswipe.css";
 import ScrollTop from "@/components/common/ScrollTop";
+import ScrollToTop from "@/components/common/ScrollToTop";
 import Mobilemenu from "@/components/modals/Mobilemenu";
 import Context from "@/context/Context";
 import HomePage from "./pages";
@@ -37,6 +38,7 @@ function App() {
       <div id="wrapper" className="counter-scroll">
         <LayoutWrapper>
           <Context>
+            <ScrollToTop />
             <Routes>
               <Route path="/">
                 <Route index element={<MarketingConsultionPage />} />

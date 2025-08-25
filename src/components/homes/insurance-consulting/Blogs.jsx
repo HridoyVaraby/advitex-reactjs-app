@@ -1,10 +1,17 @@
-import { blogPosts } from "@/data/blogs";
-import React from "react";
+import { blogPostsMetadata } from "@/data/blogPostsSimple";
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
 import { Pagination } from "swiper/modules";
+
 export default function Blogs() {
+  // Get the latest 8 blog posts for the insurance consulting page
+  const latestPosts = useMemo(() => {
+    return [...blogPostsMetadata]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 8);
+  }, []);
   return (
     <div className="section">
       <div className="tf-container">
@@ -54,7 +61,7 @@ export default function Blogs() {
             el: ".spd7",
           }}
         >
-          {blogPosts.map((post) => (
+          {latestPosts.map((post) => (
             <SwiperSlide className="swiper-slide" key={`blog-${post.id}`}>
               <div className="blog-article-item style-4">
                 <Link
@@ -63,17 +70,17 @@ export default function Blogs() {
                 >
                   <img
                     className="lazyload"
-                    data-src={post.imageSrc}
-                    alt={post.alt}
-                    src={post.imageSrc}
+                    data-src={post.featuredImage}
+                    alt={post.title}
+                    src={post.featuredImage}
                     width={415}
                     height={280}
                   />
                   <img
                     className="lazyload"
-                    data-src={post.imageSrc}
-                    alt={post.alt}
-                    src={post.imageSrc}
+                    data-src={post.featuredImage}
+                    alt={post.title}
+                    src={post.featuredImage}
                     width={415}
                     height={280}
                   />
@@ -82,7 +89,7 @@ export default function Blogs() {
                   <ul className="blog-article-meta mb_8 d-flex align-items-center style-2">
                     <li className="meta-item text-body-2">{post.date}</li>
                     <li className="meta-item date text-body-2">
-                      {post.comments}
+                      {post.readTime}
                     </li>
                   </ul>
                   <h6 className="title fw-5 letter-spacing-2 text_mono-dark-9 line-clamp-2">
