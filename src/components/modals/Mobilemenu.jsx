@@ -54,16 +54,18 @@ export default function Mobilemenu() {
                   }`}
               >
                 <Link to="/testimonials" className="mb-menu-link">
-                  Testimonials
+                  Clients
                 </Link>
               </li>
-              <li
-                className={`nav-mb-item ${isActive("/portfolio") ? "active" : ""
-                  }`}
-              >
-                <Link to="/portfolio" className="mb-menu-link">
+              <li className="nav-mb-item">
+                <a 
+                  href="#" 
+                  className="mb-menu-link" 
+                  onClick={(e) => e.preventDefault()} 
+                  style={{ cursor: 'default', pointerEvents: 'none' }}
+                >
                   Case Study
-                </Link>
+                </a>
               </li>
               <li
                 className={`nav-mb-item ${isActive("/blog") ? "active" : ""
@@ -89,8 +91,7 @@ export default function Mobilemenu() {
                 <p className="text_mono-gray">
                   Address:
                   <span className="fw-5 text_mono-gray-5">
-                    House - 73, Road - 2, Block - A, Niketan,
-                    Gulshan 1, Dhaka - 1213, Bangladesh
+                    Flat 4B, House 94/2, Road 10, Block D, Niketan Society, Dhaka 1212, Bangladesh
                   </span>
                 </p>
               </li>

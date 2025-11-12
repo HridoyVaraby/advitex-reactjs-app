@@ -297,3 +297,14 @@ Testimonials Page Specific Fixes
     }
   }
 }
+// No
+n-clickable menu items styling
+.main-nav ul li span {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
+}

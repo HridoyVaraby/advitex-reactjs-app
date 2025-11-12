@@ -39,7 +39,7 @@ export default function PortfolioPage() {
                       Home
                     </Link>
                   </li>
-                  <li>Case Studie</li>
+                  <li>Case Studies</li>
                 </ul>
               </div>
             </div>
