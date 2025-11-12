@@ -157,18 +157,13 @@ export default function Footer5({ parentClass = "footer style-4", nonHomepage = 
                           </Link>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
-                          <Link to="/portfolio" className="link footer-menu_item">
+                          <span className="footer-menu_item" style={{ cursor: 'default' }}>
                             Case Study
-                          </Link>
-                        </li>
-                        <li className="text-body-3 text_mono-gray-8">
-                          <Link to="#" className="link footer-menu_item">
-                            Career
-                          </Link>
+                          </span>
                         </li>
                         <li className="text-body-3 text_mono-gray-8">
                           <Link to="/testimonials" className="link footer-menu_item">
-                            Testimonials
+                            Clients
                           </Link>
                         </li>
                       </ul>
@@ -236,8 +231,8 @@ export default function Footer5({ parentClass = "footer style-4", nonHomepage = 
                         spread360.live@gmail.com
                       </div>
                       <div className="text-body-2 text_white">
-                        House - 73, Road - 2, Block - A, Niketan, <br />
-                        Gulshan 1, Dhaka - 1213, Bangladesh
+                        Flat 4B, House 94/2, Road 10, Block D, <br />
+                        Niketan Society, Dhaka 1212, Bangladesh
                       </div>
                       <div className="text-body-2 text_white">
                         +880 1701-000654
@@ -251,21 +246,21 @@ export default function Footer5({ parentClass = "footer style-4", nonHomepage = 
                   <ul className="left d-flex align-items-center">
                     <li>
                       <Link
-                        to={`/pricing`}
+                        to={`/privacy-policy`}
                         className="link text_mono-gray-5 text-body-3"
                       >
                         Privacy Policy
                       </Link>
                     </li>
                     <li>
-                      <a href="#" className="link text_mono-gray-5 text-body-3">
-                        Terms & Conditions
-                      </a>
+                      <span className="text_mono-gray-5 text-body-3" style={{ cursor: 'default' }}>
+                        Career
+                      </span>
                     </li>
                     <li>
-                      <a href="#" className="link text_mono-gray-5 text-body-3">
+                      <span className="text_mono-gray-5 text-body-3" style={{ cursor: 'default' }}>
                         Cookies
-                      </a>
+                      </span>
                     </li>
                   </ul>
                   <div className="footer-logo mb-0">

@@ -19,10 +19,16 @@ export default function Nav() {
         <Link to="/services">Service</Link>
       </li>
       <li className={`${isActive("/testimonials") ? "current-menu" : ""}`}>
-        <Link to="/testimonials">Testimonials</Link>
+        <Link to="/testimonials">Clients</Link>
       </li>
-      <li className={`${isActive("/portfolio") ? "current-menu" : ""}`}>
-        <Link to="/portfolio">Case Study</Link>
+      <li>
+        <a 
+          href="#" 
+          onClick={(e) => e.preventDefault()} 
+          style={{ cursor: 'default', pointerEvents: 'none' }}
+        >
+          Case Study
+        </a>
       </li>
       <li className={`${isActive("/blog") ? "current-menu" : ""}`}>
         <Link to="/blog">Blog</Link>
