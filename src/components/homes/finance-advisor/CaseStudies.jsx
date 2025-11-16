@@ -66,10 +66,8 @@ export default function CaseStudies() {
                     height={study.height}
                   />
                 </div>
-                <h6 className="title text_white">
-                  <Link to={`/single-project/${study.id}`} className="link">
-                    {study.title}
-                  </Link>
+                <h6 className="title text_white case-study-title">
+                  {study.title}
                 </h6>
               </div>
             </SwiperSlide>

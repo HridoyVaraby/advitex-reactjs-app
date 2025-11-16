@@ -73,40 +73,9 @@ export default function CaseStudies() {
                     height={study.height}
                   />
                 </div>
-                <h6 className="title text_white">
-                  <Link to={`/single-project/${study.id}`} className="link">
-                    {study.title}
-                  </Link>
+                <h6 className="title text_white case-study-title">
+                  {study.title}
                 </h6>
-                <Link
-                  to={`/single-project/${study.id}`}
-                  className="tf-btn btn-white"
-                >
-                  <span>
-                    <svg
-                      width={18}
-                      height={18}
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.75 5.25009L4.5 13.5001"
-                        stroke="#121416"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M8.25 4.59864C8.25 4.59864 12.4752 4.24246 13.1164 4.88365C13.7575 5.52483 13.4013 9.75 13.4013 9.75"
-                        stroke="#121416"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                  <span className="bg-effect" />
-                </Link>
               </div>
             </SwiperSlide>
           ))}

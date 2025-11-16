@@ -308,3 +308,23 @@ n-clickable menu items styling
   color: inherit;
   text-decoration: none;
 }
+
+// Case Study Title Hover Effect
+.case-study-title {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: #FFA13F !important; // Orange accent color
+  }
+}
+
+.case-studies-item {
+  .title.case-study-title {
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #FFA13F !important; // Orange accent color
+    }
+  }
+}
