@@ -61,7 +61,7 @@ export default function CaseStudies() {
           {caseStudies.map((study) => (
             <SwiperSlide className="swiper-slide" key={study.id}>
               <div className="case-studies-item style-1 hover-image hover-border border-element h-full">
-                <Link to={`/single-project/${study.id}`} className="img-style">
+                <div className="img-style">
                   <img
                     className="lazyload"
                     data-src={study.imageSrc}
@@ -70,7 +70,7 @@ export default function CaseStudies() {
                     width={382}
                     height={502}
                   />
-                </Link>
+                </div>
                 <div className="content">
                   <div className="top d-flex align-items-center justify-content-between mb_31">
                     <div className="brand">
@@ -81,16 +81,10 @@ export default function CaseStudies() {
                         height={study.brandHeight}
                       />
                     </div>
-                    <a href="#" className="tf-btn">
-                      <span className="icon-arrow-top-right" />
-                      <span className="bg-effect" />
-                    </a>
                   </div>
                   <div className="heading mb_65">
-                    <h4 className="mb_15 title">
-                      <Link to={`/single-project/${study.id}`} className="link">
-                        {study.title}
-                      </Link>
+                    <h4 className="mb_15 title case-study-title">
+                      {study.title}
                     </h4>
                     <p className="text_mono-gray-7 text-body-2">
                       {study.description}

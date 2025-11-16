@@ -148,25 +148,17 @@ export default function Features2() {
                     <div className="avatar rounded-cycle overflow-hidden">
                       <img
                         alt="avatar"
-                        src="/images/avatar/avatar-17.jpg"
+                        src="/images/avatar/testimonial/Anyaprokash.png"
                         width={144}
                         height={144}
                       />
                     </div>
                     <div className="content">
-                      <p className="description fw-3 text-body-2 mb_4 text-secondary">
-                        “It's a comprehensive tool of Advitex that we
-                        <span className="fw-6 text-secondary">
-                          rely on daily{" "}
-                        </span>
-                        to guide our
-                        <span className="fw-6 text-secondary">
-                          investment decisions
-                        </span>
-                        ”
+                      <p className="description fw-3 text-body-2 mb_4 text_white">
+                        “Delivered our website with a user-friendly and beautiful outlook that has directly contributed to increasing our online sales. We are extremely satisfied with their ongoing support.”
                       </p>
                       <div className="text-body-2 fw-6 text-secondary">
-                        John Sena - CEO of Kling
+                        Mazharul Islam - Founder, Anyaprokash
                       </div>
                     </div>
                   </div>
@@ -221,19 +213,17 @@ export default function Features2() {
                   <div className="avatar rounded-cycle overflow-hidden">
                     <img
                       alt="avatar"
-                      src="/images/avatar/avatar-5.jpg"
+                      src="/images/avatar/testimonial/Shashya-Prabartana.jpg"
                       width={100}
                       height={100}
                     />
                   </div>
                   <div className="content">
-                    <p className="description fw-3 text-body-2 mb_4 text-secondary">
-                      "Thanks to Advitex's stock planning tools, we have seen
-                      remarkable stability in our investments, even during
-                      volatile periods."
+                    <p className="description fw-3 text-body-2 mb_4 text_white">
+                      "Our new website is excellent, and the support from the Spread Communications team has been consistent and reliable. They provide great service and peace of mind with their professional website management."
                     </p>
                     <div className="text-body-2 fw-6 text-secondary">
-                      Alex Boar - CEO of Marcus
+                      Head of Accounts, Shashya Prabartana 
                     </div>
                   </div>
                 </div>
@@ -290,19 +280,17 @@ export default function Features2() {
                   <div className="avatar rounded-cycle overflow-hidden">
                     <img
                       alt="avatar"
-                      src="/images/avatar/avatar-6.jpg"
+                      src="/images/avatar/testimonial/Waffle-Time.jpg"
                       width={100}
                       height={100}
                     />
                   </div>
                   <div className="content">
-                    <p className="description fw-3 text-body-2 mb_4 text-secondary">
-                      "Advitex's strategic insights have been crucial in
-                      redefining our business path and keeping us ahead of the
-                      curve."
+                    <p className="description fw-3 text-body-2 mb_4 text_white">
+                      "We are highly appreciative of the massive effort put into our promotion, influencer marketing, and social media strategy. Spread Communications' full-service marketing drive made a significant impact on our brand visibility."
                     </p>
                     <div className="text-body-2 fw-6 text-secondary">
-                      Elise Chrona - CEO of Minga
+                      Abrar Galib - Founder, Waffle Time
                     </div>
                   </div>
                 </div>
@@ -355,21 +343,17 @@ export default function Features2() {
                   <div className="avatar rounded-cycle overflow-hidden">
                     <img
                       alt="avatar"
-                      src="/images/avatar/avatar-8.jpg"
+                      src="/images/avatar/testimonial/UBINIG.jpg"
                       width={96}
                       height={96}
                     />
                   </div>
                   <div className="content">
-                    <p className="description fw-3 text-body-2 mb_4 text-secondary">
-                      "Advitex's investment planning has
-                      <span className="">simplified complex decisions</span> ,
-                      giving us clarity and
-                      <span className="text-secondary fw-6">confidence</span>
-                      in our financial journey."
+                    <p className="description fw-3 text-body-2 mb_4 text_white">
+                      "The professionalism and quality of service provided by Spread Communications in creating and maintaining our website are top-tier. We highly recommend them for their dependable web solutions"
                     </p>
                     <div className="text-body-2 fw-6 text-secondary">
-                      Elise Chrona - CEO of Minga
+                      Farhad Mazhar - Founder, UBINIG
                     </div>
                   </div>
                 </div>

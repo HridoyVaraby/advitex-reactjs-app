@@ -10,7 +10,7 @@ import Contact from "@/components/common/Contact";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Testimonials || Spread Communications - Purpose-driven smart marketing solutions",
+  title: "Clients || Spread Communications - Purpose-driven smart marketing solutions",
   description: "Spread Communications - Purpose-driven smart marketing solutions",
 };
 
@@ -39,7 +39,7 @@ export default function TestimonialsPage() {
                       Home
                     </Link>
                   </li>
-                  <li>Testimonials</li>
+                  <li>Clients</li>
                 </ul>
               </div>
             </div>
