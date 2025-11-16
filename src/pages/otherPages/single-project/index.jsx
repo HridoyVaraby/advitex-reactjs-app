@@ -1,8 +1,8 @@
 import Contact from "@/components/common/Contact";
 import Faqs from "@/components/common/Faqs";
 import Testimonials from "@/components/common/Testimonials";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer5 from "@/components/footers/Footer5";
+import Header5 from "@/components/headers/Header5";
 import PortfolioSingle from "@/components/otherPages/PortfolioSingle";
 
 import { allCaseStudies } from "@/data/caseStudies";
@@ -25,7 +25,7 @@ export default function SingleProjectPage() {
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header">
-        <Header1 />
+        <Header5 />
         <div className="page-title style-default">
           <div className="tf-container">
             <div className="row">
@@ -63,7 +63,7 @@ export default function SingleProjectPage() {
         <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
         <Contact />
       </div>
-      <Footer1 nonHomepage={true} />
+      <Footer5 nonHomepage={true} />
     </>
   );
 }
